@@ -1,0 +1,35 @@
+{
+  "admin": {
+    "js": "/assets/admin.2fc82ccc.chunk.js"
+  },
+  "contact": {
+    "js": "/assets/contact.1cc13c41.chunk.js"
+  },
+  "tracking": {
+    "js": "/assets/tracking.1d4ea0ba.chunk.js"
+  },
+  "service": {
+    "js": "/assets/service.41a771e8.chunk.js"
+  },
+  "newsDetail": {
+    "js": "/assets/newsDetail.eb522832.chunk.js"
+  },
+  "news": {
+    "js": "/assets/news.6938e755.chunk.js"
+  },
+  "category": {
+    "js": "/assets/category.11a6ff89.chunk.js"
+  },
+  "allService": {
+    "js": "/assets/allService.ffb6871e.chunk.js"
+  },
+  "about": {
+    "js": "/assets/about.bf48d5d8.chunk.js"
+  },
+  "client": {
+    "js": "/assets/client.7295cdb3.js"
+  },
+  "vendor": {
+    "js": "/assets/vendor.33affb78.js"
+  }
+}
