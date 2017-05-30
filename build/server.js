@@ -1788,7 +1788,7 @@ app.get('*', (() => {
         state: context.store.getState()
       };
 
-      let version = 3;
+      let version = 4;
 
       if (isAdmin) {
         const html = __WEBPACK_IMPORTED_MODULE_8_react_dom_server___default.a.renderToStaticMarkup(__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12__components_HtmlAdmin__["a" /* default */], _extends({ v: version }, data, { isAdmin: isAdmin })));
@@ -5369,7 +5369,7 @@ var _ref9 = _jsx('b', {}, void 0, 'Body : ');
 
 var _ref10 = _jsx('br', {});
 
-var _ref11 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 2:'));
+var _ref11 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 1:'));
 
 var _ref12 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 2:'));
 
@@ -5385,7 +5385,7 @@ var _ref17 = _jsx('b', {}, void 0, 'Body : ');
 
 var _ref18 = _jsx('br', {});
 
-var _ref19 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 2:'));
+var _ref19 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 1:'));
 
 var _ref20 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 2:'));
 
@@ -5401,7 +5401,7 @@ var _ref25 = _jsx('b', {}, void 0, 'Body : ');
 
 var _ref26 = _jsx('br', {});
 
-var _ref27 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 2:'));
+var _ref27 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 1:'));
 
 var _ref28 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 2:'));
 
@@ -5417,7 +5417,7 @@ var _ref33 = _jsx('b', {}, void 0, 'Body : ');
 
 var _ref34 = _jsx('br', {});
 
-var _ref35 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 2:'));
+var _ref35 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 1:'));
 
 var _ref36 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 2:'));
 
@@ -5433,7 +5433,7 @@ var _ref41 = _jsx('b', {}, void 0, 'Body : ');
 
 var _ref42 = _jsx('br', {});
 
-var _ref43 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 2:'));
+var _ref43 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 1:'));
 
 var _ref44 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 2:'));
 
@@ -5449,7 +5449,7 @@ var _ref49 = _jsx('b', {}, void 0, 'Body : ');
 
 var _ref50 = _jsx('br', {});
 
-var _ref51 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 2:'));
+var _ref51 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 1:'));
 
 var _ref52 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh s\u1ED1 2:'));
 
@@ -5481,7 +5481,6 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
     this.state = {
       allService: {},
-      services: {},
       data: {},
       showModalSelectImage: false
     };
@@ -5554,7 +5553,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Collapse"], {}, void 0, this.state.services && this.state.services.groundtransport && _jsx(Panel, {
+    })), this.state.services && _jsx('div', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Collapse"], {}, void 0, this.state.services && this.state.services.groundtransport && _jsx(Panel, {
       header: 'Service 1 (Ground Transport)'
     }, 'service1', _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
       className: 'padding-5'
@@ -5606,7 +5605,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    })), this.state.services.groundtransport.img1 !== undefined && _jsx('div', {
+    })), _jsx('div', {
       style: { marginBottom: 16 }
     }, void 0, _ref11, this.state.services.groundtransport.img1 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
       bordered: false,
@@ -5629,7 +5628,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    }, void 0, 'X\xF3a \u1EA3nh ')), this.state.services.groundtransport.img2 !== undefined && _jsx('div', {
+    }, void 0, 'X\xF3a \u1EA3nh ')), _jsx('div', {
       style: { marginBottom: 16 }
     }, void 0, _ref12, this.state.services.groundtransport.img2 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
       bordered: false,
@@ -5639,7 +5638,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       src: this.state.services.groundtransport.img2
     })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
       style: { marginRight: 10 },
-      onClick: () => this.showModalSelectImage('groundtransport1')
+      onClick: () => this.showModalSelectImage('groundtransport2')
     }, void 0, 'Ch\u1ECDn \u1EA3nh t\u1EEB th\u01B0 vi\u1EC7n'), this.state.services.groundtransport.img2 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
       onClick: () => {
         this.setState(prevState => {
@@ -5652,7 +5651,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    }, void 0, 'X\xF3a \u1EA3nh ')))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Collapse"], {}, void 0, this.state.services && this.state.services.cargo && _jsx(Panel, {
+    }, void 0, 'X\xF3a \u1EA3nh ')))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Collapse"], {}, void 0, _jsx(Panel, {
       header: 'Service 2 (Cargo)'
     }, 'service2', _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
       className: 'padding-5'
@@ -5704,7 +5703,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    })), this.state.services.cargo.img1 !== undefined && _jsx('div', {
+    })), _jsx('div', {
       style: { marginBottom: 16 }
     }, void 0, _ref19, this.state.services.cargo.img1 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
       bordered: false,
@@ -5727,7 +5726,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    }, void 0, 'X\xF3a \u1EA3nh ')), this.state.services.cargo.img2 !== undefined && _jsx('div', {
+    }, void 0, 'X\xF3a \u1EA3nh ')), _jsx('div', {
       style: { marginBottom: 16 }
     }, void 0, _ref20, this.state.services.cargo.img2 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
       bordered: false,
@@ -5750,7 +5749,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    }, void 0, 'X\xF3a \u1EA3nh ')))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Collapse"], {}, void 0, this.state.services && this.state.services.warehousing && _jsx(Panel, {
+    }, void 0, 'X\xF3a \u1EA3nh ')))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Collapse"], {}, void 0, _jsx(Panel, {
       header: 'Service 3 (warehousing)'
     }, 'service3', _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
       className: 'padding-5'
@@ -5802,7 +5801,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    })), this.state.services.warehousing.img1 !== undefined && _jsx('div', {
+    })), _jsx('div', {
       style: { marginBottom: 16 }
     }, void 0, _ref27, this.state.services.warehousing.img1 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
       bordered: false,
@@ -5825,7 +5824,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    }, void 0, 'X\xF3a \u1EA3nh ')), this.state.services.warehousing.img2 !== undefined && _jsx('div', {
+    }, void 0, 'X\xF3a \u1EA3nh ')), _jsx('div', {
       style: { marginBottom: 16 }
     }, void 0, _ref28, this.state.services.warehousing.img2 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
       bordered: false,
@@ -5900,7 +5899,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    })), this.state.services.logisticservice.img1 !== undefined && _jsx('div', {
+    })), _jsx('div', {
       style: { marginBottom: 16 }
     }, void 0, _ref35, this.state.services.logisticservice.img1 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
       bordered: false,
@@ -5923,7 +5922,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    }, void 0, 'X\xF3a \u1EA3nh ')), this.state.services.logisticservice.img2 !== undefined && _jsx('div', {
+    }, void 0, 'X\xF3a \u1EA3nh ')), _jsx('div', {
       style: { marginBottom: 16 }
     }, void 0, _ref36, this.state.services.logisticservice.img2 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
       bordered: false,
@@ -5946,7 +5945,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    }, void 0, 'X\xF3a \u1EA3nh ')))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Collapse"], {}, void 0, this.state.services && this.state.services.trackingservice && _jsx(Panel, {
+    }, void 0, 'X\xF3a \u1EA3nh ')))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Collapse"], {}, void 0, _jsx(Panel, {
       header: 'Service  5 (Tracking Service)'
     }, 'service5', _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
       className: 'padding-5'
@@ -5998,7 +5997,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    })), this.state.services.trackingservice.img1 !== undefined && _jsx('div', {
+    })), _jsx('div', {
       style: { marginBottom: 16 }
     }, void 0, _ref43, this.state.services.trackingservice.img1 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
       bordered: false,
@@ -6021,7 +6020,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    }, void 0, 'X\xF3a \u1EA3nh ')), this.state.services.trackingservice.img2 !== undefined && _jsx('div', {
+    }, void 0, 'X\xF3a \u1EA3nh ')), _jsx('div', {
       style: { marginBottom: 16 }
     }, void 0, _ref44, this.state.services.trackingservice.img2 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
       bordered: false,
@@ -6044,7 +6043,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    }, void 0, 'X\xF3a \u1EA3nh ')))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Collapse"], {}, void 0, this.state.services && this.state.services.storage && _jsx(Panel, {
+    }, void 0, 'X\xF3a \u1EA3nh ')))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Collapse"], {}, void 0, _jsx(Panel, {
       header: 'Service 6 (storage)'
     }, 'service6', _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
       className: 'padding-5'
@@ -6096,7 +6095,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    })), this.state.services.storage.img1 !== undefined && _jsx('div', {
+    })), _jsx('div', {
       style: { marginBottom: 16 }
     }, void 0, _ref51, this.state.services.storage.img1 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
       bordered: false,
@@ -6142,7 +6141,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    }, void 0, 'X\xF3a \u1EA3nh ')))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+    }, void 0, 'X\xF3a \u1EA3nh '))))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
       className: 'padding-5'
     }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
       size: 'large',
@@ -6171,7 +6170,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return _extends({}, prevState, {
           modalSelectImage: false,
           services: _extends({}, prevState.services, {
-            groundtransport: _extends({}, prevState.groundtransport, {
+            groundtransport: _extends({}, prevState.services.groundtransport, {
               img1: '/image/' + img.name
             })
           })
@@ -6182,7 +6181,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return _extends({}, prevState, {
           modalSelectImage: false,
           services: _extends({}, prevState.services, {
-            groundtransport: _extends({}, prevState.groundtransport, {
+            groundtransport: _extends({}, prevState.services.groundtransport, {
               img2: '/image/' + img.name
             })
           })
@@ -6193,7 +6192,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return _extends({}, prevState, {
           modalSelectImage: false,
           services: _extends({}, prevState.services, {
-            cargo: _extends({}, prevState.cargo, {
+            cargo: _extends({}, prevState.services.cargo, {
               img1: '/image/' + img.name
             })
           })
@@ -6204,7 +6203,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return _extends({}, prevState, {
           modalSelectImage: false,
           services: _extends({}, prevState.services, {
-            cargo: _extends({}, prevState.cargo, {
+            cargo: _extends({}, prevState.services.cargo, {
               img2: '/image/' + img.name
             })
           })
@@ -6215,7 +6214,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return _extends({}, prevState, {
           modalSelectImage: false,
           services: _extends({}, prevState.services, {
-            logisticservice: _extends({}, prevState.logisticservice, {
+            logisticservice: _extends({}, prevState.services.logisticservice, {
               img1: '/image/' + img.name
             })
           })
@@ -6226,7 +6225,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return _extends({}, prevState, {
           modalSelectImage: false,
           services: _extends({}, prevState.services, {
-            logisticservice: _extends({}, prevState.logisticservice, {
+            logisticservice: _extends({}, prevState.services.logisticservice, {
               img2: '/image/' + img.name
             })
           })
@@ -6237,7 +6236,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return _extends({}, prevState, {
           modalSelectImage: false,
           services: _extends({}, prevState.services, {
-            trackingservice: _extends({}, prevState.trackingservice, {
+            trackingservice: _extends({}, prevState.services.trackingservice, {
               img1: '/image/' + img.name
             })
           })
@@ -6248,7 +6247,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return _extends({}, prevState, {
           modalSelectImage: false,
           services: _extends({}, prevState.services, {
-            trackingservice: _extends({}, prevState.trackingservice, {
+            trackingservice: _extends({}, prevState.services.trackingservice, {
               img2: '/image/' + img.name
             })
           })
@@ -6259,7 +6258,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return _extends({}, prevState, {
           modalSelectImage: false,
           services: _extends({}, prevState.services, {
-            warehousing: _extends({}, prevState.warehousing, {
+            warehousing: _extends({}, prevState.services.warehousing, {
               img1: '/image/' + img.name
             })
           })
@@ -6270,7 +6269,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return _extends({}, prevState, {
           modalSelectImage: false,
           services: _extends({}, prevState.services, {
-            warehousing: _extends({}, prevState.warehousing, {
+            warehousing: _extends({}, prevState.services.warehousing, {
               img2: '/image/' + img.name
             })
           })
@@ -6281,7 +6280,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return _extends({}, prevState, {
           modalSelectImage: false,
           services: _extends({}, prevState.services, {
-            storage: _extends({}, prevState.storage, {
+            storage: _extends({}, prevState.services.storage, {
               img1: '/image/' + img.name
             })
           })
@@ -6292,7 +6291,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return _extends({}, prevState, {
           modalSelectImage: false,
           services: _extends({}, prevState.services, {
-            storage: _extends({}, prevState.storage, {
+            storage: _extends({}, prevState.services.storage, {
               img2: '/image/' + img.name
             })
           })

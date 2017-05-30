@@ -21,7 +21,6 @@ class Contact extends React.Component {
     super(props)
     this.state = {
       allService: {},
-      services: {},
       data: {},
       showModalSelectImage: false,
     }
@@ -101,7 +100,7 @@ class Contact extends React.Component {
             }} />
           </Row>}
 
-
+          {this.state.services && <div>
           <Collapse>
             {this.state.services && this.state.services.groundtransport &&
             <Panel header={'Service 1 (Ground Transport)'} key="service1">
@@ -171,40 +170,37 @@ class Contact extends React.Component {
               </Row>
 
 
-              {this.state.services.groundtransport.img1 !== undefined &&
-                <div style={{ marginBottom: 16 }}>
-                  <label><b>Ảnh số 2:</b></label>
-                  {this.state.services.groundtransport.img1 && <Card bordered={false} className="imgWr"
-                                                 onClick={() => this.showModalSelectImage('groundtransport1')}
-                  >
-                    <img src={this.state.services.groundtransport.img1} />
-                  </Card>}
+              <div style={{ marginBottom: 16 }}>
+                <label><b>Ảnh số 1:</b></label>
+                {this.state.services.groundtransport.img1 && <Card bordered={false} className="imgWr"
+                                               onClick={() => this.showModalSelectImage('groundtransport1')}
+                >
+                  <img src={this.state.services.groundtransport.img1} />
+                </Card>}
 
-                  <Button style={{marginRight: 10}}
-                          onClick={() => this.showModalSelectImage('groundtransport1')}
-                  >Chọn ảnh từ thư viện</Button>
-                  {this.state.services.groundtransport.img1 && <Button
-                    onClick={() => {
-                      this.setState(prevState => {
-                        return {
-                          ...prevState,
-                          services: {
-                            ...prevState.services,
-                            groundtransport: {
-                              ...prevState.groundtransport,
-                              img1: null
-                            }
+                <Button style={{marginRight: 10}}
+                        onClick={() => this.showModalSelectImage('groundtransport1')}
+                >Chọn ảnh từ thư viện</Button>
+                {this.state.services.groundtransport.img1 && <Button
+                  onClick={() => {
+                    this.setState(prevState => {
+                      return {
+                        ...prevState,
+                        services: {
+                          ...prevState.services,
+                          groundtransport: {
+                            ...prevState.groundtransport,
+                            img1: null
                           }
                         }
-                      })
-                    }
-                    }
-                  >Xóa ảnh </Button>}
+                      }
+                    })
+                  }
+                  }
+                >Xóa ảnh </Button>}
 
-                </div>
-              }
+              </div>
 
-              {this.state.services.groundtransport.img2 !== undefined &&
               <div style={{ marginBottom: 16 }}>
                 <label><b>Ảnh số 2:</b></label>
                 {this.state.services.groundtransport.img2 && <Card bordered={false} className="imgWr"
@@ -214,7 +210,7 @@ class Contact extends React.Component {
                 </Card>}
 
                 <Button style={{marginRight: 10}}
-                        onClick={() => this.showModalSelectImage('groundtransport1')}
+                        onClick={() => this.showModalSelectImage('groundtransport2')}
                 >Chọn ảnh từ thư viện</Button>
                 {this.state.services.groundtransport.img2 && <Button
                   onClick={() => {
@@ -235,14 +231,13 @@ class Contact extends React.Component {
                 >Xóa ảnh </Button>}
 
               </div>
-              }
 
             </Panel>
             }
           </Collapse>
 
           <Collapse>
-            {this.state.services && this.state.services.cargo &&
+
             <Panel header={'Service 2 (Cargo)'} key="service2">
               <Row className="padding-5">
                 <b>Title: </b>
@@ -309,9 +304,8 @@ class Contact extends React.Component {
               </Row>
 
 
-              {this.state.services.cargo.img1 !== undefined &&
               <div style={{ marginBottom: 16 }}>
-                <label><b>Ảnh số 2:</b></label>
+                <label><b>Ảnh số 1:</b></label>
                 {this.state.services.cargo.img1 && <Card bordered={false} className="imgWr"
                                                                    onClick={() => this.showModalSelectImage('cargo1')}
                 >
@@ -340,9 +334,7 @@ class Contact extends React.Component {
                 >Xóa ảnh </Button>}
 
               </div>
-              }
 
-              {this.state.services.cargo.img2 !== undefined &&
               <div style={{ marginBottom: 16 }}>
                 <label><b>Ảnh số 2:</b></label>
                 {this.state.services.cargo.img2 && <Card bordered={false} className="imgWr"
@@ -371,16 +363,13 @@ class Contact extends React.Component {
                   }
                   }
                 >Xóa ảnh </Button>}
-
               </div>
-              }
 
             </Panel>
-            }
+
           </Collapse>
 
           <Collapse>
-            {this.state.services && this.state.services.warehousing &&
             <Panel header={'Service 3 (warehousing)'} key="service3">
               <Row className="padding-5">
                 <b>Title: </b>
@@ -447,9 +436,8 @@ class Contact extends React.Component {
               </Row>
 
 
-              {this.state.services.warehousing.img1 !== undefined &&
               <div style={{ marginBottom: 16 }}>
-                <label><b>Ảnh số 2:</b></label>
+                <label><b>Ảnh số 1:</b></label>
                 {this.state.services.warehousing.img1 && <Card bordered={false} className="imgWr"
                                                                onClick={() => this.showModalSelectImage('warehousing1')}
                 >
@@ -478,9 +466,8 @@ class Contact extends React.Component {
                 >Xóa ảnh </Button>}
 
               </div>
-              }
 
-              {this.state.services.warehousing.img2 !== undefined &&
+
               <div style={{ marginBottom: 16 }}>
                 <label><b>Ảnh số 2:</b></label>
                 {this.state.services.warehousing.img2 && <Card bordered={false} className="imgWr"
@@ -511,10 +498,10 @@ class Contact extends React.Component {
                 >Xóa ảnh </Button>}
 
               </div>
-              }
+
 
             </Panel>
-            }
+
           </Collapse>
 
           <Collapse>
@@ -585,9 +572,8 @@ class Contact extends React.Component {
               </Row>
 
 
-              {this.state.services.logisticservice.img1 !== undefined &&
               <div style={{ marginBottom: 16 }}>
-                <label><b>Ảnh số 2:</b></label>
+                <label><b>Ảnh số 1:</b></label>
                 {this.state.services.logisticservice.img1 && <Card bordered={false} className="imgWr"
                                                                    onClick={() => this.showModalSelectImage('logisticservice1')}
                 >
@@ -616,9 +602,8 @@ class Contact extends React.Component {
                 >Xóa ảnh </Button>}
 
               </div>
-              }
 
-              {this.state.services.logisticservice.img2 !== undefined &&
+
               <div style={{ marginBottom: 16 }}>
                 <label><b>Ảnh số 2:</b></label>
                 {this.state.services.logisticservice.img2 && <Card bordered={false} className="imgWr"
@@ -649,14 +634,13 @@ class Contact extends React.Component {
                 >Xóa ảnh </Button>}
 
               </div>
-              }
 
             </Panel>
             }
           </Collapse>
 
           <Collapse>
-            {this.state.services && this.state.services.trackingservice &&
+
             <Panel header={'Service  5 (Tracking Service)'} key="service5">
               <Row className="padding-5">
                 <b>Title: </b>
@@ -723,9 +707,8 @@ class Contact extends React.Component {
               </Row>
 
 
-              {this.state.services.trackingservice.img1 !== undefined &&
               <div style={{ marginBottom: 16 }}>
-                <label><b>Ảnh số 2:</b></label>
+                <label><b>Ảnh số 1:</b></label>
                 {this.state.services.trackingservice.img1 && <Card bordered={false} className="imgWr"
                                                                    onClick={() => this.showModalSelectImage('trackingservice1')}
                 >
@@ -754,9 +737,8 @@ class Contact extends React.Component {
                 >Xóa ảnh </Button>}
 
               </div>
-              }
 
-              {this.state.services.trackingservice.img2 !== undefined &&
+
               <div style={{ marginBottom: 16 }}>
                 <label><b>Ảnh số 2:</b></label>
                 {this.state.services.trackingservice.img2 && <Card bordered={false} className="imgWr"
@@ -787,14 +769,14 @@ class Contact extends React.Component {
                 >Xóa ảnh </Button>}
 
               </div>
-              }
+
 
             </Panel>
-            }
+
           </Collapse>
 
+
           <Collapse>
-            {this.state.services && this.state.services.storage &&
             <Panel header={'Service 6 (storage)'} key="service6">
               <Row className="padding-5">
                 <b>Title: </b>
@@ -861,13 +843,12 @@ class Contact extends React.Component {
               </Row>
 
 
-              {this.state.services.storage.img1 !== undefined &&
-              <div style={{ marginBottom: 16 }}>
-                <label><b>Ảnh số 2:</b></label>
+              <div style={{marginBottom: 16}}>
+                <label><b>Ảnh số 1:</b></label>
                 {this.state.services.storage.img1 && <Card bordered={false} className="imgWr"
                                                            onClick={() => this.showModalSelectImage('storage1')}
                 >
-                  <img src={this.state.services.storage.img1} />
+                  <img src={this.state.services.storage.img1}/>
                 </Card>}
 
                 <Button style={{marginRight: 10}}
@@ -892,15 +873,15 @@ class Contact extends React.Component {
                 >Xóa ảnh </Button>}
 
               </div>
-              }
+
 
               {this.state.services.storage.img2 !== undefined &&
-              <div style={{ marginBottom: 16 }}>
+              <div style={{marginBottom: 16}}>
                 <label><b>Ảnh số 2:</b></label>
                 {this.state.services.storage.img2 && <Card bordered={false} className="imgWr"
                                                            onClick={() => this.showModalSelectImage('storage2')}
                 >
-                  <img src={this.state.services.storage.img2} />
+                  <img src={this.state.services.storage.img2}/>
                 </Card>}
 
                 <Button style={{marginRight: 10}}
@@ -928,8 +909,10 @@ class Contact extends React.Component {
               }
 
             </Panel>
-            }
+
           </Collapse>
+          </div>
+          }
 
           <Row className="padding-5">
             <Button
@@ -976,7 +959,7 @@ class Contact extends React.Component {
           services: {
             ...prevState.services,
             groundtransport: {
-              ...prevState.groundtransport,
+              ...prevState.services.groundtransport,
               img1: '/image/' + img.name
             }
           }
@@ -990,7 +973,7 @@ class Contact extends React.Component {
           services: {
             ...prevState.services,
             groundtransport: {
-              ...prevState.groundtransport,
+              ...prevState.services.groundtransport,
               img2: '/image/' + img.name
             }
           }
@@ -1004,7 +987,7 @@ class Contact extends React.Component {
           services: {
             ...prevState.services,
             cargo: {
-              ...prevState.cargo,
+              ...prevState.services.cargo,
               img1: '/image/' + img.name
             }
           }
@@ -1018,7 +1001,7 @@ class Contact extends React.Component {
           services: {
             ...prevState.services,
             cargo: {
-              ...prevState.cargo,
+              ...prevState.services.cargo,
               img2: '/image/' + img.name
             }
           }
@@ -1032,7 +1015,7 @@ class Contact extends React.Component {
           services: {
             ...prevState.services,
             logisticservice: {
-              ...prevState.logisticservice,
+              ...prevState.services.logisticservice,
               img1: '/image/' + img.name
             }
           }
@@ -1046,7 +1029,7 @@ class Contact extends React.Component {
           services: {
             ...prevState.services,
             logisticservice: {
-              ...prevState.logisticservice,
+              ...prevState.services.logisticservice,
               img2: '/image/' + img.name
             }
           }
@@ -1060,7 +1043,7 @@ class Contact extends React.Component {
           services: {
             ...prevState.services,
             trackingservice: {
-              ...prevState.trackingservice,
+              ...prevState.services.trackingservice,
               img1: '/image/' + img.name
             }
           }
@@ -1074,7 +1057,7 @@ class Contact extends React.Component {
           services: {
             ...prevState.services,
             trackingservice: {
-              ...prevState.trackingservice,
+              ...prevState.services.trackingservice,
               img2: '/image/' + img.name
             }
           }
@@ -1088,7 +1071,7 @@ class Contact extends React.Component {
           services: {
             ...prevState.services,
             warehousing: {
-              ...prevState.warehousing,
+              ...prevState.services.warehousing,
               img1: '/image/' + img.name
             }
           }
@@ -1102,7 +1085,7 @@ class Contact extends React.Component {
           services: {
             ...prevState.services,
             warehousing: {
-              ...prevState.warehousing,
+              ...prevState.services.warehousing,
               img2: '/image/' + img.name
             }
           }
@@ -1116,7 +1099,7 @@ class Contact extends React.Component {
           services: {
             ...prevState.services,
             storage: {
-              ...prevState.storage,
+              ...prevState.services.storage,
               img1: '/image/' + img.name
             }
           }
@@ -1130,7 +1113,7 @@ class Contact extends React.Component {
           services: {
             ...prevState.services,
             storage: {
-              ...prevState.storage,
+              ...prevState.services.storage,
               img2: '/image/' + img.name
             }
           }
