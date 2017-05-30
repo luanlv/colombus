@@ -21,7 +21,7 @@ class News extends React.Component {
                 return (
                   <article className="clearfix hentry">
                     <Link to={'/news/' + news.slug}>
-                      <img alt="placeholder" className="img-responsive" src="/assets/images/placeholders/848x480.png" />
+                      <img alt="placeholder" className="img-responsive" src={news.coverUrl} />
                     </Link>
                     <div className="meta-data">
                       <time className="meta-data__date" >{news.created_at}</time>

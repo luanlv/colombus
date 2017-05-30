@@ -12,10 +12,10 @@
     "js": "/assets/service.de52f8fd.chunk.js"
   },
   "newsDetail": {
-    "js": "/assets/newsDetail.44f0c829.chunk.js"
+    "js": "/assets/newsDetail.978c0658.chunk.js"
   },
   "news": {
-    "js": "/assets/news.736f5139.chunk.js"
+    "js": "/assets/news.0d87433f.chunk.js"
   },
   "category": {
     "js": "/assets/category.a8e5aea5.chunk.js"
@@ -30,6 +30,6 @@
     "js": "/assets/client.6937c5bc.js"
   },
   "vendor": {
-    "js": "/assets/vendor.43cbc317.js"
+    "js": "/assets/vendor.983f269c.js"
   }
 }

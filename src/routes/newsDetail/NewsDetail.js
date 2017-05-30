@@ -19,7 +19,7 @@ class NewsDetail extends React.Component {
             <div className="col-xs-12 col-md-9">
               <article className="clearfix hentry">
                 <span >
-                  <img alt="placeholder" className="img-responsive" src="/assets/images/placeholders/848x480.png" />
+                  <img alt="placeholder" className="img-responsive" src={news.coverUrl} />
                 </span>
                 <div className="meta-data">
                   <time className="meta-data__date" dateTime="2015-05-06T15:00:06+00:00">{news.created_at}</time>

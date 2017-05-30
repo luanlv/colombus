@@ -1788,7 +1788,7 @@ app.get('*', (() => {
         state: context.store.getState()
       };
 
-      let version = 4;
+      let version = 5;
 
       if (isAdmin) {
         const html = __WEBPACK_IMPORTED_MODULE_8_react_dom_server___default.a.renderToStaticMarkup(__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12__components_HtmlAdmin__["a" /* default */], _extends({ v: version }, data, { isAdmin: isAdmin })));
@@ -14212,29 +14212,23 @@ var _ref2 = _jsx(__WEBPACK_IMPORTED_MODULE_2__components__["b" /* BreadCrumb */]
   title: 'Tin tức tổng hợp'
 });
 
-var _ref3 = _jsx('img', {
-  alt: 'placeholder',
-  className: 'img-responsive',
-  src: '/assets/images/placeholders/848x480.png'
-});
-
-var _ref4 = _jsx('span', {
+var _ref3 = _jsx('span', {
   className: 'meta-data__separator'
 }, void 0, '/');
 
-var _ref5 = _jsx('span', {
+var _ref4 = _jsx('span', {
   className: 'meta-data__author'
 }, void 0, 'G\u1EEDi b\u1EDFi Admin');
 
-var _ref6 = _jsx('span', {
+var _ref5 = _jsx('span', {
   className: 'meta-data__separator'
 }, void 0, '/');
 
-var _ref7 = _jsx('span', {
+var _ref6 = _jsx('span', {
   className: 'btn btn-default btn--post'
 }, void 0, 'Xem th\xEAm');
 
-var _ref8 = _jsx('div', {
+var _ref7 = _jsx('div', {
   className: 'widget_search'
 }, void 0, _jsx('form', {
   action: '#',
@@ -14254,11 +14248,11 @@ var _ref8 = _jsx('div', {
   className: 'fa fa-lg fa-search'
 }))));
 
-var _ref9 = _jsx('h4', {
+var _ref8 = _jsx('h4', {
   className: 'sidebar__headings'
 }, void 0, 'B\xE0i vi\u1EBFt g\u1EA7n \u0111\xE2y');
 
-var _ref10 = _jsx('h4', {
+var _ref9 = _jsx('h4', {
   className: 'sidebar__headings'
 }, void 0, 'Danh m\u1EE5c');
 
@@ -14277,11 +14271,15 @@ function News(props) {
       className: 'clearfix hentry'
     }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */], {
       to: '/news/' + news.slug
-    }, void 0, _ref3), _jsx('div', {
+    }, void 0, _jsx('img', {
+      alt: 'placeholder',
+      className: 'img-responsive',
+      src: news.coverUrl
+    })), _jsx('div', {
       className: 'meta-data'
     }, void 0, _jsx('time', {
       className: 'meta-data__date'
-    }, void 0, news.created_at), _ref4, _ref5, _ref6, _jsx('span', {
+    }, void 0, news.created_at), _ref3, _ref4, _ref5, _jsx('span', {
       className: 'meta-data__categories'
     }, void 0, news.category.map((category, index) => {
       return _jsx('span', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */], {
@@ -14297,20 +14295,20 @@ function News(props) {
     }, void 0, _jsx('p', {}, void 0, news.description), _jsx('p', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */], {
       className: 'more-link',
       to: "/news/" + news.slug
-    }, void 0, _ref7))));
+    }, void 0, _ref6))));
   })), _jsx('div', {
     className: 'col-xs-12 col-md-3'
   }, void 0, _jsx('div', {
     className: 'sidebar'
-  }, void 0, _ref8, _jsx('div', {
+  }, void 0, _ref7, _jsx('div', {
     className: 'widget_recent_entries'
-  }, void 0, _ref9, ' ', _jsx('ul', {}, void 0, recentNews.map(news => {
+  }, void 0, _ref8, ' ', _jsx('ul', {}, void 0, recentNews.map(news => {
     return _jsx('li', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */], {
       to: '/news/' + news.slug
     }, void 0, news.title));
   }))), _jsx('div', {
     className: 'widget_categories'
-  }, void 0, _ref10, _jsx('ul', {}, void 0, categories.map(el => {
+  }, void 0, _ref9, _jsx('ul', {}, void 0, categories.map(el => {
     return _jsx('li', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */], {
       to: "/category/" + el.slug
     }, void 0, el.title));
@@ -14487,25 +14485,19 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 
 
-var _ref = _jsx('span', {}, void 0, _jsx('img', {
-  alt: 'placeholder',
-  className: 'img-responsive',
-  src: '/assets/images/placeholders/848x480.png'
-}));
-
-var _ref2 = _jsx('span', {
+var _ref = _jsx('span', {
   className: 'meta-data__separator'
 }, void 0, '/');
 
-var _ref3 = _jsx('span', {
+var _ref2 = _jsx('span', {
   className: 'meta-data__author'
 }, void 0, '\u0110\u0103ng b\u1EDBi Admin');
 
-var _ref4 = _jsx('span', {
+var _ref3 = _jsx('span', {
   className: 'meta-data__separator'
 }, void 0, '/');
 
-var _ref5 = _jsx('div', {
+var _ref4 = _jsx('div', {
   className: 'widget_search'
 }, void 0, _jsx('form', {
   action: '#',
@@ -14525,11 +14517,11 @@ var _ref5 = _jsx('div', {
   className: 'fa fa-lg fa-search'
 }))));
 
-var _ref6 = _jsx('h4', {
+var _ref5 = _jsx('h4', {
   className: 'sidebar__headings'
 }, void 0, 'B\xE0i vi\u1EBFt g\u1EA7n \u0111\xE2y');
 
-var _ref7 = _jsx('h4', {
+var _ref6 = _jsx('h4', {
   className: 'sidebar__headings'
 }, void 0, 'Danh m\u1EE5c');
 
@@ -14552,12 +14544,16 @@ function NewsDetail(props) {
     className: 'col-xs-12 col-md-9'
   }, void 0, _jsx('article', {
     className: 'clearfix hentry'
-  }, void 0, _ref, _jsx('div', {
+  }, void 0, _jsx('span', {}, void 0, _jsx('img', {
+    alt: 'placeholder',
+    className: 'img-responsive',
+    src: news.coverUrl
+  })), _jsx('div', {
     className: 'meta-data'
   }, void 0, _jsx('time', {
     className: 'meta-data__date',
     dateTime: '2015-05-06T15:00:06+00:00'
-  }, void 0, news.created_at), _ref2, _ref3, _ref4, _jsx('span', {
+  }, void 0, news.created_at), _ref, _ref2, _ref3, _jsx('span', {
     className: 'meta-data__categories'
   }, void 0, news.category.map((category, index) => {
     return _jsx('span', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */], {
@@ -14573,15 +14569,15 @@ function NewsDetail(props) {
     className: 'col-xs-12 col-md-3'
   }, void 0, _jsx('div', {
     className: 'sidebar'
-  }, void 0, _ref5, _jsx('div', {
+  }, void 0, _ref4, _jsx('div', {
     className: 'widget_recent_entries'
-  }, void 0, _ref6, _jsx('ul', {}, void 0, recentNews.map(news => {
+  }, void 0, _ref5, _jsx('ul', {}, void 0, recentNews.map(news => {
     return _jsx('li', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */], {
       to: '/news/' + news.slug
     }, void 0, news.title));
   }))), _jsx('div', {
     className: 'widget_categories'
-  }, void 0, _ref7, _jsx('ul', {}, void 0, categories.map(el => {
+  }, void 0, _ref6, _jsx('ul', {}, void 0, categories.map(el => {
     return _jsx('li', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */], {
       to: "/category/" + el.slug
     }, void 0, el.title));
