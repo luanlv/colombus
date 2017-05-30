@@ -319,6 +319,276 @@ class Contact extends React.Component {
 
             </Panel>
 
+            {this.state.data.menu &&
+            <Panel header={'Menu'} key="menu">
+              <Row className="padding-5">
+                <b>Menu 1: </b>
+                <br/>
+                <Input size="large" defaultValue={this.state.data.menu.menu1} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        menu: {
+                          ...prev.data.menu,
+                          menu1: value
+                        }
+
+                      }
+                    }
+                  })
+                }}/>
+              </Row>
+
+              <Row className="padding-5">
+                <b>Path 1: </b>
+                <br/>
+                <Input size="large" defaultValue={this.state.data.menu.path1} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        menu: {
+                          ...prev.data.menu,
+                          path1: value
+                        }
+
+                      }
+                    }
+                  })
+                }}/>
+              </Row>
+
+              <hr style={{borderColor: 'blue'}}/>
+
+              <Row className="padding-5">
+                <b>Menu 2: </b>
+                <br/>
+                <Input size="large" defaultValue={this.state.data.menu.menu2} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        menu: {
+                          ...prev.data.menu,
+                          menu2: value
+                        }
+
+                      }
+                    }
+                  })
+                }}/>
+              </Row>
+
+              <Row className="padding-5">
+                <b>Path 2: </b>
+                <br/>
+                <Input size="large" defaultValue={this.state.data.menu.path2} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        menu: {
+                          ...prev.data.menu,
+                          path2: value
+                        }
+
+                      }
+                    }
+                  })
+                }}/>
+              </Row>
+
+              <hr style={{borderColor: 'blue'}}/>
+
+              <Row className="padding-5">
+                <b>Menu 3: </b>
+                <br/>
+                <Input size="large" defaultValue={this.state.data.menu.menu3} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        menu: {
+                          ...prev.data.menu,
+                          menu3: value
+                        }
+
+                      }
+                    }
+                  })
+                }}/>
+              </Row>
+
+              <Row className="padding-5">
+                <b>Path 3: </b>
+                <br/>
+                <Input size="large" defaultValue={this.state.data.menu.path3} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        menu: {
+                          ...prev.data.menu,
+                          path3: value
+                        }
+
+                      }
+                    }
+                  })
+                }}/>
+              </Row>
+
+              <hr style={{borderColor: 'blue'}}/>
+
+              <Row className="padding-5">
+                <b>Menu 4: </b>
+                <br/>
+                <Input size="large" defaultValue={this.state.data.menu.menu4} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        menu: {
+                          ...prev.data.menu,
+                          menu4: value
+                        }
+
+                      }
+                    }
+                  })
+                }}/>
+              </Row>
+
+              <Row className="padding-5">
+                <b>Path 3: </b>
+                <br/>
+                <Input size="large" defaultValue={this.state.data.menu.path4} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        menu: {
+                          ...prev.data.menu,
+                          path4: value
+                        }
+
+                      }
+                    }
+                  })
+                }}/>
+              </Row>
+
+              <hr style={{borderColor: 'blue'}}/>
+
+              <Row className="padding-5">
+                <b>Menu 5: </b>
+                <br/>
+                <Input size="large" defaultValue={this.state.data.menu.menu5} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        menu: {
+                          ...prev.data.menu,
+                          menu5: value
+                        }
+
+                      }
+                    }
+                  })
+                }}/>
+              </Row>
+
+              <Row className="padding-5">
+                <b>Path 5: </b>
+                <br/>
+                <Input size="large" defaultValue={this.state.data.menu.path5} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        menu: {
+                          ...prev.data.menu,
+                          path5: value
+                        }
+
+                      }
+                    }
+                  })
+                }}/>
+              </Row>
+
+              <hr style={{borderColor: 'blue'}}/>
+
+              <Row className="padding-5">
+                <b>Menu 3: </b>
+                <br/>
+                <Input size="large" defaultValue={this.state.data.menu.menu3} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        menu: {
+                          ...prev.data.menu,
+                          menu3: value
+                        }
+
+                      }
+                    }
+                  })
+                }}/>
+              </Row>
+
+              <Row className="padding-5">
+                <b>Path 6: </b>
+                <br/>
+                <Input size="large" defaultValue={this.state.data.menu.path6} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        menu: {
+                          ...prev.data.menu,
+                          path6: value
+                        }
+
+                      }
+                    }
+                  })
+                }}/>
+              </Row>
+
+              <hr style={{borderColor: 'blue'}}/>
+
+
+            </Panel>
+            }
+
           </Collapse>
           <Row className="padding-5">
             <Button

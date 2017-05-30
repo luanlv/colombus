@@ -4572,7 +4572,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 
-const title = 'About';
+const title = 'Trang giới thiệu';
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
@@ -9442,6 +9442,54 @@ var _ref21 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, 'Logo Ch\xEDnh'));
 
 var _ref22 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, 'Logo Ph\u1EE5:'));
 
+var _ref23 = _jsx('b', {}, void 0, 'Menu 1: ');
+
+var _ref24 = _jsx('br', {});
+
+var _ref25 = _jsx('b', {}, void 0, 'Path 1: ');
+
+var _ref26 = _jsx('br', {});
+
+var _ref27 = _jsx('b', {}, void 0, 'Menu 2: ');
+
+var _ref28 = _jsx('br', {});
+
+var _ref29 = _jsx('b', {}, void 0, 'Path 2: ');
+
+var _ref30 = _jsx('br', {});
+
+var _ref31 = _jsx('b', {}, void 0, 'Menu 3: ');
+
+var _ref32 = _jsx('br', {});
+
+var _ref33 = _jsx('b', {}, void 0, 'Path 3: ');
+
+var _ref34 = _jsx('br', {});
+
+var _ref35 = _jsx('b', {}, void 0, 'Menu 4: ');
+
+var _ref36 = _jsx('br', {});
+
+var _ref37 = _jsx('b', {}, void 0, 'Path 3: ');
+
+var _ref38 = _jsx('br', {});
+
+var _ref39 = _jsx('b', {}, void 0, 'Menu 5: ');
+
+var _ref40 = _jsx('br', {});
+
+var _ref41 = _jsx('b', {}, void 0, 'Path 5: ');
+
+var _ref42 = _jsx('br', {});
+
+var _ref43 = _jsx('b', {}, void 0, 'Menu 3: ');
+
+var _ref44 = _jsx('br', {});
+
+var _ref45 = _jsx('b', {}, void 0, 'Path 6: ');
+
+var _ref46 = _jsx('br', {});
+
 class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
   constructor(props) {
@@ -9716,7 +9764,237 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    }, void 0, 'X\xF3a \u1EA3nh ')))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+    }, void 0, 'X\xF3a \u1EA3nh '))), this.state.data.menu && _jsx(Panel, {
+      header: 'Menu'
+    }, 'menu', _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref23, _ref24, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.menu.menu1,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              menu: _extends({}, prev.data.menu, {
+                menu1: value
+              })
+
+            })
+          });
+        });
+      }
+    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref25, _ref26, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.menu.path1,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              menu: _extends({}, prev.data.menu, {
+                path1: value
+              })
+
+            })
+          });
+        });
+      }
+    })), _jsx('hr', {
+      style: { borderColor: 'blue' }
+    }), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref27, _ref28, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.menu.menu2,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              menu: _extends({}, prev.data.menu, {
+                menu2: value
+              })
+
+            })
+          });
+        });
+      }
+    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref29, _ref30, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.menu.path2,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              menu: _extends({}, prev.data.menu, {
+                path2: value
+              })
+
+            })
+          });
+        });
+      }
+    })), _jsx('hr', {
+      style: { borderColor: 'blue' }
+    }), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref31, _ref32, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.menu.menu3,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              menu: _extends({}, prev.data.menu, {
+                menu3: value
+              })
+
+            })
+          });
+        });
+      }
+    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref33, _ref34, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.menu.path3,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              menu: _extends({}, prev.data.menu, {
+                path3: value
+              })
+
+            })
+          });
+        });
+      }
+    })), _jsx('hr', {
+      style: { borderColor: 'blue' }
+    }), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref35, _ref36, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.menu.menu4,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              menu: _extends({}, prev.data.menu, {
+                menu4: value
+              })
+
+            })
+          });
+        });
+      }
+    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref37, _ref38, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.menu.path4,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              menu: _extends({}, prev.data.menu, {
+                path4: value
+              })
+
+            })
+          });
+        });
+      }
+    })), _jsx('hr', {
+      style: { borderColor: 'blue' }
+    }), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref39, _ref40, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.menu.menu5,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              menu: _extends({}, prev.data.menu, {
+                menu5: value
+              })
+
+            })
+          });
+        });
+      }
+    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref41, _ref42, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.menu.path5,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              menu: _extends({}, prev.data.menu, {
+                path5: value
+              })
+
+            })
+          });
+        });
+      }
+    })), _jsx('hr', {
+      style: { borderColor: 'blue' }
+    }), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref43, _ref44, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.menu.menu3,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              menu: _extends({}, prev.data.menu, {
+                menu3: value
+              })
+
+            })
+          });
+        });
+      }
+    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref45, _ref46, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.menu.path6,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              menu: _extends({}, prev.data.menu, {
+                path6: value
+              })
+
+            })
+          });
+        });
+      }
+    })), _jsx('hr', {
+      style: { borderColor: 'blue' }
+    }))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
       className: 'padding-5'
     }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
       size: 'large',
@@ -10342,6 +10620,42 @@ var _ref112 = _jsx('b', {}, void 0, 'Body 4: ');
 
 var _ref113 = _jsx('br', {});
 
+var _ref114 = _jsx('b', {}, void 0, 'Url [1]: ');
+
+var _ref115 = _jsx('br', {});
+
+var _ref116 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh slide 1:'));
+
+var _ref117 = _jsx('b', {}, void 0, 'Url [2]: ');
+
+var _ref118 = _jsx('br', {});
+
+var _ref119 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh Partner [2]:'));
+
+var _ref120 = _jsx('b', {}, void 0, 'Url [3]: ');
+
+var _ref121 = _jsx('br', {});
+
+var _ref122 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh Partner 3:'));
+
+var _ref123 = _jsx('b', {}, void 0, 'Url [4]: ');
+
+var _ref124 = _jsx('br', {});
+
+var _ref125 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh Partner [4]:'));
+
+var _ref126 = _jsx('b', {}, void 0, 'Url [5]: ');
+
+var _ref127 = _jsx('br', {});
+
+var _ref128 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh Partner [5]:'));
+
+var _ref129 = _jsx('b', {}, void 0, 'Url [6]: ');
+
+var _ref130 = _jsx('br', {});
+
+var _ref131 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh Partner [6]:'));
+
 class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
   constructor(props) {
@@ -10634,17 +10948,21 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       }
     }, void 0, 'X\xF3a \u1EA3nh ')), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
       className: 'padding-5'
-    }, void 0, _ref24, _ref25, _jsx(CodeMirror, {
-      value: this.state.data.about1.body,
-      onChange: value => this.setState(prev => {
-        return _extends({}, prev, {
-          data: _extends({}, prev.data, {
-            about1: _extends({}, prev.data.about1, {
-              body: value
+    }, void 0, _ref24, _ref25, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.about1.body,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              about1: _extends({}, prev.data.about1, {
+                body: value
+              })
             })
-          })
+          });
         });
-      })
+      }
     }))), this.state.data.about2 !== undefined && _jsx(Panel, {
       header: 'About 2'
     }, 'about2', _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
@@ -10706,17 +11024,21 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       }
     }, void 0, 'X\xF3a \u1EA3nh ')), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
       className: 'padding-5'
-    }, void 0, _ref31, _ref32, _jsx(CodeMirror, {
-      value: this.state.data.about2.body,
-      onChange: value => this.setState(prev => {
-        return _extends({}, prev, {
-          data: _extends({}, prev.data, {
-            about2: _extends({}, prev.data.about2, {
-              body: value
+    }, void 0, _ref31, _ref32, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.about2.body,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              about2: _extends({}, prev.data.about2, {
+                body: value
+              })
             })
-          })
+          });
         });
-      })
+      }
     }))), this.state.data.about3 !== undefined && _jsx(Panel, {
       header: 'About 3'
     }, 'about3', _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
@@ -10778,17 +11100,21 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       }
     }, void 0, 'X\xF3a \u1EA3nh ')), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
       className: 'padding-5'
-    }, void 0, _ref38, _ref39, _jsx(CodeMirror, {
-      value: this.state.data.about3.body,
-      onChange: value => this.setState(prev => {
-        return _extends({}, prev, {
-          data: _extends({}, prev.data, {
-            about3: _extends({}, prev.data.about3, {
-              body: value
+    }, void 0, _ref38, _ref39, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.about3.body,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              about3: _extends({}, prev.data.about3, {
+                body: value
+              })
             })
-          })
+          });
         });
-      })
+      }
     }))), this.state.data.service1 !== undefined && _jsx(Panel, {
       header: 'Service 1'
     }, 'service1', _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
@@ -11442,7 +11768,261 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           });
         });
       }
-    })))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+    }))), this.state.data.partners !== undefined && _jsx(Panel, {
+      header: 'Partners'
+    }, 'partners', _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref114, _ref115, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.partners.url1,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              partners: _extends({}, prev.data.partners, {
+                url1: value
+              })
+            })
+          });
+        });
+      }
+    })), this.state.data.partners !== undefined && _jsx('div', {
+      style: { marginBottom: 16 }
+    }, void 0, _ref116, this.state.data.partners.img1 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
+      bordered: false,
+      className: 'imgWr',
+      onClick: () => this.showModalSelectImage('partner1')
+    }, void 0, _jsx('img', {
+      src: this.state.data.partners.img1
+    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
+      style: { marginRight: 10 },
+      onClick: () => this.showModalSelectImage('partner1')
+    }, void 0, 'Ch\u1ECDn \u1EA3nh t\u1EEB th\u01B0 vi\u1EC7n'), this.state.data.partners.img1 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
+      onClick: () => {
+        this.setState(prevState => {
+          return _extends({}, prevState, {
+            data: _extends({}, prevState.data, {
+              partners: _extends({}, prevState.data.partners, {
+                img1: null
+              })
+            })
+          });
+        });
+      }
+    }, void 0, 'X\xF3a \u1EA3nh ')), _jsx('hr', {
+      style: { backgroundColor: 'blue' }
+    }), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref117, _ref118, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.partners.url2,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              partners: _extends({}, prev.data.partners, {
+                url2: value
+              })
+            })
+          });
+        });
+      }
+    })), this.state.data.partners !== undefined && _jsx('div', {
+      style: { marginBottom: 16 }
+    }, void 0, _ref119, this.state.data.partners.img2 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
+      bordered: false,
+      className: 'imgWr',
+      onClick: () => this.showModalSelectImage('partner2')
+    }, void 0, _jsx('img', {
+      src: this.state.data.partners.img2
+    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
+      style: { marginRight: 10 },
+      onClick: () => this.showModalSelectImage('partner2')
+    }, void 0, 'Ch\u1ECDn \u1EA3nh t\u1EEB th\u01B0 vi\u1EC7n'), this.state.data.partners.img2 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
+      onClick: () => {
+        this.setState(prevState => {
+          return _extends({}, prevState, {
+            data: _extends({}, prevState.data, {
+              partners: _extends({}, prevState.data.partners, {
+                img2: null
+              })
+            })
+          });
+        });
+      }
+    }, void 0, 'X\xF3a \u1EA3nh ')), _jsx('hr', {
+      style: { backgroundColor: 'blue' }
+    }), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref120, _ref121, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.partners.url3,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              partners: _extends({}, prev.data.partners, {
+                url3: value
+              })
+            })
+          });
+        });
+      }
+    })), this.state.data.partners !== undefined && _jsx('div', {
+      style: { marginBottom: 16 }
+    }, void 0, _ref122, this.state.data.partners.img3 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
+      bordered: false,
+      className: 'imgWr',
+      onClick: () => this.showModalSelectImage('partner3')
+    }, void 0, _jsx('img', {
+      src: this.state.data.partners.img3
+    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
+      style: { marginRight: 10 },
+      onClick: () => this.showModalSelectImage('partner3')
+    }, void 0, 'Ch\u1ECDn \u1EA3nh t\u1EEB th\u01B0 vi\u1EC7n'), this.state.data.partners.img3 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
+      onClick: () => {
+        this.setState(prevState => {
+          return _extends({}, prevState, {
+            data: _extends({}, prevState.data, {
+              partners: _extends({}, prevState.data.partners, {
+                img3: null
+              })
+            })
+          });
+        });
+      }
+    }, void 0, 'X\xF3a \u1EA3nh ')), _jsx('hr', {
+      style: { backgroundColor: 'blue' }
+    }), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref123, _ref124, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.partners.url4,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              partners: _extends({}, prev.data.partners, {
+                url4: value
+              })
+            })
+          });
+        });
+      }
+    })), this.state.data.partners !== undefined && _jsx('div', {
+      style: { marginBottom: 16 }
+    }, void 0, _ref125, this.state.data.partners.img4 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
+      bordered: false,
+      className: 'imgWr',
+      onClick: () => this.showModalSelectImage('partner4')
+    }, void 0, _jsx('img', {
+      src: this.state.data.partners.img4
+    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
+      style: { marginRight: 10 },
+      onClick: () => this.showModalSelectImage('partner4')
+    }, void 0, 'Ch\u1ECDn \u1EA3nh t\u1EEB th\u01B0 vi\u1EC7n'), this.state.data.partners.img4 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
+      onClick: () => {
+        this.setState(prevState => {
+          return _extends({}, prevState, {
+            data: _extends({}, prevState.data, {
+              partners: _extends({}, prevState.data.partners, {
+                img4: null
+              })
+            })
+          });
+        });
+      }
+    }, void 0, 'X\xF3a \u1EA3nh ')), _jsx('hr', {
+      style: { backgroundColor: 'blue' }
+    }), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref126, _ref127, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.partners.url5,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              partners: _extends({}, prev.data.partners, {
+                url5: value
+              })
+            })
+          });
+        });
+      }
+    })), this.state.data.partners !== undefined && _jsx('div', {
+      style: { marginBottom: 16 }
+    }, void 0, _ref128, this.state.data.partners.img5 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
+      bordered: false,
+      className: 'imgWr',
+      onClick: () => this.showModalSelectImage('partner5')
+    }, void 0, _jsx('img', {
+      src: this.state.data.partners.img5
+    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
+      style: { marginRight: 10 },
+      onClick: () => this.showModalSelectImage('partner5')
+    }, void 0, 'Ch\u1ECDn \u1EA3nh t\u1EEB th\u01B0 vi\u1EC7n'), this.state.data.partners.img5 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
+      onClick: () => {
+        this.setState(prevState => {
+          return _extends({}, prevState, {
+            data: _extends({}, prevState.data, {
+              partners: _extends({}, prevState.data.partners, {
+                img5: null
+              })
+            })
+          });
+        });
+      }
+    }, void 0, 'X\xF3a \u1EA3nh ')), _jsx('hr', {
+      style: { backgroundColor: 'blue' }
+    }), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0, _ref129, _ref130, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
+      size: 'large',
+      defaultValue: this.state.data.partners.url6,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState(prev => {
+          return _extends({}, prev, {
+            data: _extends({}, prev.data, {
+              partners: _extends({}, prev.data.partners, {
+                url6: value
+              })
+            })
+          });
+        });
+      }
+    })), this.state.data.partners !== undefined && _jsx('div', {
+      style: { marginBottom: 16 }
+    }, void 0, _ref131, this.state.data.partners.img6 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Card"], {
+      bordered: false,
+      className: 'imgWr',
+      onClick: () => this.showModalSelectImage('partner6')
+    }, void 0, _jsx('img', {
+      src: this.state.data.partners.img6
+    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
+      style: { marginRight: 10 },
+      onClick: () => this.showModalSelectImage('partner6')
+    }, void 0, 'Ch\u1ECDn \u1EA3nh t\u1EEB th\u01B0 vi\u1EC7n'), this.state.data.partners.img6 && _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
+      onClick: () => {
+        this.setState(prevState => {
+          return _extends({}, prevState, {
+            data: _extends({}, prevState.data, {
+              partners: _extends({}, prevState.data.partners, {
+                img6: null
+              })
+            })
+          });
+        });
+      }
+    }, void 0, 'X\xF3a \u1EA3nh ')), _jsx('hr', {
+      style: { backgroundColor: 'blue' }
+    }))), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
       className: 'padding-5'
     }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
       size: 'large',
@@ -11477,7 +12057,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         return _extends({}, prevState, {
           modalSelectImage: false,
           data: _extends({}, prevState.data, {
-            slideImg1: '/image/' + img.name
+            slideImg2: '/image/' + img.name
           })
         });
       });
@@ -11510,6 +12090,72 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           data: _extends({}, prevState.data, {
             about3: _extends({}, prevState.data.about3, {
               img: '/image/' + img.name
+            })
+          })
+        });
+      });
+    } else if (this.state.selectImageType === 'partner1') {
+      this.setState(prevState => {
+        return _extends({}, prevState, {
+          modalSelectImage: false,
+          data: _extends({}, prevState.data, {
+            partners: _extends({}, prevState.data.partners, {
+              img1: '/image/' + img.name
+            })
+          })
+        });
+      });
+    } else if (this.state.selectImageType === 'partner2') {
+      this.setState(prevState => {
+        return _extends({}, prevState, {
+          modalSelectImage: false,
+          data: _extends({}, prevState.data, {
+            partners: _extends({}, prevState.data.partners, {
+              img2: '/image/' + img.name
+            })
+          })
+        });
+      });
+    } else if (this.state.selectImageType === 'partner3') {
+      this.setState(prevState => {
+        return _extends({}, prevState, {
+          modalSelectImage: false,
+          data: _extends({}, prevState.data, {
+            partners: _extends({}, prevState.data.partners, {
+              img3: '/image/' + img.name
+            })
+          })
+        });
+      });
+    } else if (this.state.selectImageType === 'partner4') {
+      this.setState(prevState => {
+        return _extends({}, prevState, {
+          modalSelectImage: false,
+          data: _extends({}, prevState.data, {
+            partners: _extends({}, prevState.data.partners, {
+              img4: '/image/' + img.name
+            })
+          })
+        });
+      });
+    } else if (this.state.selectImageType === 'partner5') {
+      this.setState(prevState => {
+        return _extends({}, prevState, {
+          modalSelectImage: false,
+          data: _extends({}, prevState.data, {
+            partners: _extends({}, prevState.data.partners, {
+              img5: '/image/' + img.name
+            })
+          })
+        });
+      });
+    } else if (this.state.selectImageType === 'partner6') {
+      this.setState(prevState => {
+        return _extends({}, prevState, {
+          modalSelectImage: false,
+          data: _extends({}, prevState.data, {
+            partners: _extends({}, prevState.data.partners, {
+              img6: '/image/' + img.name
             })
           })
         });
@@ -11858,7 +12504,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 
-const title = 'Service';
+const title = 'Trang dịch vụ';
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
@@ -12132,7 +12778,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 
-const title = 'News';
+const title = 'Danh mục tin tức';
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
@@ -12497,7 +13143,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 
-const title = 'Track';
+const title = 'Trang liên hệ';
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
@@ -12803,104 +13449,76 @@ function CoreValue(props) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Link__ = __webpack_require__(1);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
 
 
-var _ref = _jsx("div", {
-  className: "news"
-}, void 0, _jsx("div", {
-  className: "container"
-}, void 0, _jsx("div", {
-  className: "row"
-}, void 0, _jsx("div", {
-  className: "col-sm-4 margin-bottom-30"
-}, void 0, _jsx("div", {
-  className: "widget_pw_latest_news"
-}, void 0, _jsx("a", {
-  className: "latest-news",
-  href: "article.html"
-}, void 0, _jsx("div", {
-  className: "latest-news__date"
-}, void 0, _jsx("div", {
-  className: "latest-news__date__month"
-}, void 0, "May"), _jsx("div", {
-  className: "latest-news__date__day"
-}, void 0, "6")), _jsx("img", {
-  alt: "Why choose our warehousing service?",
-  className: "wp-post-image",
-  sizes: "(min-width: 781px) 360px, calc(100vw - 30px)",
-  srcSet: "/assets/images/placeholders/360x204.png 360w, /assets/images/placeholders/848x480.png 848w",
-  src: "/assets/images/placeholders/360x204.png"
-}), _jsx("div", {
-  className: "latest-news__content"
-}, void 0, _jsx("h4", {
-  className: "latest-news__title"
-}, void 0, "Why choose our warehousing service?"), _jsx("div", {
-  className: "latest-news__author"
-}, void 0, "\u0110\u0103ng b\u1EDFi Admin"))))), _jsx("div", {
-  className: "col-sm-4 margin-bottom-30"
-}, void 0, _jsx("div", {
-  className: "widget_pw_latest_news"
-}, void 0, _jsx("a", {
-  className: "latest-news",
-  href: "article.html"
-}, void 0, _jsx("div", {
-  className: "latest-news__date"
-}, void 0, _jsx("div", {
-  className: "latest-news__date__month"
-}, void 0, "May"), _jsx("div", {
-  className: "latest-news__date__day"
-}, void 0, "6")), _jsx("img", {
-  alt: "Top benefits of hiring our trucking service",
-  className: "wp-post-image",
-  sizes: "(min-width: 781px) 360px, calc(100vw - 30px)",
-  srcSet: "/assets/images/placeholders/360x204.png 360w, /assets/images/placeholders/848x480.png 848w",
-  src: "/assets/images/placeholders/360x204.png"
-}), _jsx("div", {
-  className: "latest-news__content"
-}, void 0, _jsx("h4", {
-  className: "latest-news__title"
-}, void 0, "Top benefits of hiring our trucking service"), _jsx("div", {
-  className: "latest-news__author"
-}, void 0, "\u0110\u0103ng b\u1EDFi Admin"))))), _jsx("div", {
-  className: "col-sm-4 margin-bottom-30"
-}, void 0, _jsx("div", {
-  className: "widget_pw_latest_news"
-}, void 0, _jsx("a", {
-  className: "latest-news  latest-news--inline",
-  href: "https://demo.proteusthemes.com/cargopress/2015/05/06/logistic-service-providers-would-understand-your-business/"
-}, void 0, _jsx("div", {
-  className: "latest-news__content"
-}, void 0, _jsx("h4", {
-  className: "latest-news__title"
-}, void 0, "Logistic service providers would understand your business"), _jsx("div", {
-  className: "latest-news__author"
-}, void 0, "\u0110\u0103ng b\u1EDFi Admin"))), _jsx("a", {
-  className: "latest-news  latest-news--inline",
-  href: "https://demo.proteusthemes.com/cargopress/2015/05/06/our-trucking-service-ensures-you-best-quality-services-at-all-times/"
-}, void 0, _jsx("div", {
-  className: "latest-news__content"
-}, void 0, _jsx("h4", {
-  className: "latest-news__title"
-}, void 0, "Our trucking service ensures you best quality services at all times"), _jsx("div", {
-  className: "latest-news__author"
-}, void 0, "\u0110\u0103ng b\u1EDFi Admin"))), _jsx("a", {
-  className: "latest-news  latest-news--inline",
-  href: "https://demo.proteusthemes.com/cargopress/2015/05/06/we-are-experienced-and-expert-in-the-business-of-logistics/"
-}, void 0, _jsx("div", {
-  className: "latest-news__content"
-}, void 0, _jsx("h4", {
-  className: "latest-news__title"
-}, void 0, "We are experienced and expert in the business of logistics"), _jsx("div", {
-  className: "latest-news__author"
-}, void 0, "\u0110\u0103ng b\u1EDFi Admin"))), _jsx("a", {
-  className: "latest-news  latest-news--more-news",
-  href: "https://demo.proteusthemes.com/cargopress/news/"
-}, void 0, "Xem Th\xEAm"))))));
+
+var _ref = _jsx('div', {
+  className: 'latest-news__date'
+}, void 0, _jsx('div', {
+  className: 'latest-news__date__month'
+}, void 0, 'May'), _jsx('div', {
+  className: 'latest-news__date__day'
+}, void 0, '6'));
+
+var _ref2 = _jsx('div', {
+  className: 'latest-news__author'
+}, void 0, '\u0110\u0103ng b\u1EDFi Admin');
+
+var _ref3 = _jsx('div', {
+  className: 'latest-news__author'
+}, void 0, '\u0110\u0103ng b\u1EDFi Admin');
+
+var _ref4 = _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */], {
+  className: 'latest-news  latest-news--more-news',
+  to: '/news'
+}, void 0, 'Xem Th\xEAm');
 
 function News(props) {
-  return _ref;
+
+  const recentNews = props.data.recentNews.value;
+  const news1 = recentNews.slice(0, 2);
+  const news2 = recentNews.slice(2);
+
+  return _jsx('div', {
+    className: 'news'
+  }, void 0, _jsx('div', {
+    className: 'container'
+  }, void 0, _jsx('div', {
+    className: 'row'
+  }, void 0, news1.map((news, index) => {
+    return _jsx('div', {
+      className: 'col-sm-4 margin-bottom-30'
+    }, index, _jsx('div', {
+      className: 'widget_pw_latest_news'
+    }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */], {
+      className: 'latest-news',
+      to: '/news/' + news.slug
+    }, void 0, _ref, _jsx('img', {
+      alt: 'Top benefits of hiring our trucking service',
+      className: 'wp-post-image',
+      src: news.coverUrl
+    }), _jsx('div', {
+      className: 'latest-news__content'
+    }, void 0, _jsx('h4', {
+      className: 'latest-news__title'
+    }, void 0, news.title), _ref2))));
+  }), _jsx('div', {
+    className: 'col-sm-4 margin-bottom-30'
+  }, void 0, _jsx('div', {
+    className: 'widget_pw_latest_news'
+  }, void 0, news2.map((news, index) => {
+    return _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */], {
+      className: 'latest-news  latest-news--inline',
+      to: '/news/' + news.slug
+    }, index, _jsx('div', {
+      className: 'latest-news__content'
+    }, void 0, _jsx('h4', {
+      className: 'latest-news__title'
+    }, void 0, news.title), _ref3));
+  }), _ref4)))));
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (News);
@@ -13437,11 +14055,12 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
       let seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
       let information = 'information{id, services, common, about, home}';
+      let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}';
 
       let seo = {};
       const resp = yield fetch('/graphql', {
         body: JSON.stringify({
-          query: '{' + seoGraphql + ',' + information + '}'
+          query: '{' + seoGraphql + information + recentNews + '}'
         })
       });
       const { data } = yield resp.json();
@@ -13450,7 +14069,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__actions_data__["a" /* setData */])(data));
 
       return {
-        title: 'React Starter Kit',
+        title: 'Trang chủ',
         component: _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default */], {
           data: store.getState().data
         }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__Home__["a" /* default */], {
@@ -13497,7 +14116,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
       const route = yield next();
 
       // Provide default values for title, description etc.
-      route.title = `${route.title || 'Untitled Page'} - Colombus.vn`;
+      route.title = `${route.title || 'Untitled Page'} - Colombus.Vn`;
       route.description = route.description || '';
 
       return route;
@@ -13742,7 +14361,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 
-const title = 'News';
+const title = 'Trang tin tức';
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
@@ -14010,7 +14629,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 
-const title = 'News';
+const title = 'Trang bài viết';
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
@@ -14157,11 +14776,7 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 
 
-var _ref = _jsx(__WEBPACK_IMPORTED_MODULE_1__components__["a" /* Title */], {});
-
-var _ref2 = _jsx(__WEBPACK_IMPORTED_MODULE_1__components__["b" /* BreadCrumb */], {});
-
-var _ref3 = _jsx('li', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */], {
+var _ref = _jsx('li', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */], {
   to: '/service'
 }, void 0, 'C\xE1c d\u1ECBch v\u1EE5'));
 
@@ -14170,7 +14785,12 @@ function Service(props) {
   const services = props.data.information.value.services;
   const service = services[props.slug.replace(/-/g, '')];
 
-  return _jsx('div', {}, void 0, _ref, _ref2, _jsx('div', {
+  return _jsx('div', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__components__["a" /* Title */], {
+    title: service.title,
+    description: ''
+  }), _jsx(__WEBPACK_IMPORTED_MODULE_1__components__["b" /* BreadCrumb */], {
+    title: service.title
+  }), _jsx('div', {
     className: 'container'
   }, void 0, _jsx('div', {
     className: 'row'
@@ -14198,7 +14818,7 @@ function Service(props) {
   }, void 0, _jsx('ul', {
     className: 'menu',
     id: 'menu-services-menu'
-  }, void 0, _ref3, _jsx('li', {
+  }, void 0, _ref, _jsx('li', {
     className: props.slug === services.groundtransport.slug ? "current-menu-item" : ""
   }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */], {
     to: "/service/" + services.groundtransport.slug
@@ -14234,23 +14854,25 @@ function Service(props) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Link__ = __webpack_require__(1);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
 
 
-var _ref = _jsx("div", {
-  className: "breadcrumbs"
-}, void 0, _jsx("div", {
-  className: "container"
-}, void 0, _jsx("span", {}, void 0, _jsx("a", {
-  className: "home",
-  href: "index.html",
-  title: "Go to CargoPress.",
-  rel: "v:url"
-}, void 0, "CargoPress")), _jsx("span", {}, void 0, _jsx("span", {}, void 0, "Services"))));
+
+var _ref = _jsx('span', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */], {
+  className: 'home',
+  to: '/',
+  title: 'Go to CargoPress.',
+  rel: 'v:url'
+}, void 0, 'Trang ch\u1EE7'));
 
 function BreadCrumb(props) {
-  return _ref;
+  return _jsx('div', {
+    className: 'breadcrumbs'
+  }, void 0, _jsx('div', {
+    className: 'container'
+  }, void 0, _ref, _jsx('span', {}, void 0, _jsx('span', {}, void 0, props.title))));
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (BreadCrumb);
@@ -14266,18 +14888,16 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 
 
-var _ref = _jsx("div", {
-  className: "main-title"
-}, void 0, _jsx("div", {
-  className: "container"
-}, void 0, _jsx("h1", {
-  className: "main-title__primary"
-}, void 0, "Services"), _jsx("h3", {
-  className: "main-title__secondary"
-}, void 0, "What we do and what can you expect from us")));
-
 function Title(props) {
-  return _ref;
+  return _jsx("div", {
+    className: "main-title"
+  }, void 0, _jsx("div", {
+    className: "container"
+  }, void 0, _jsx("h1", {
+    className: "main-title__primary"
+  }, void 0, props.title), _jsx("h3", {
+    className: "main-title__secondary"
+  }, void 0, props.description)));
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (Title);
@@ -14321,7 +14941,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 
-const title = 'Service';
+const title = 'Trang dịch vụ';
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
@@ -14507,7 +15127,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 
-const title = 'Track';
+const title = 'Trang tracking';
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 

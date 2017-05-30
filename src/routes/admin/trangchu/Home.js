@@ -351,20 +351,21 @@ class Contact extends React.Component {
                 <Row className="padding-5">
                   <b>Body: </b>
                   <br/>
-                  <CodeMirror
-                    value={this.state.data.about1.body} onChange={(value) => this.setState(prev => {
-                    return {
-                      ...prev,
-                      data: {
-                        ...prev.data,
-                        about1: {
-                          ...prev.data.about1,
-                          body: value
+                  <Input size="large"  defaultValue={this.state.data.about1.body} onChange={(e) => {
+                    let value = e.target.value
+                    this.setState(prev => {
+                      return {
+                        ...prev,
+                        data: {
+                          ...prev.data,
+                          about1: {
+                            ...prev.data.about1,
+                            body: value
+                          }
                         }
                       }
-                    }
-                  })}
-                  />
+                    })
+                  }} />
                 </Row>
 
               </Panel>
@@ -447,20 +448,21 @@ class Contact extends React.Component {
               <Row className="padding-5">
                 <b>Body: </b>
                 <br/>
-                <CodeMirror
-                  value={this.state.data.about2.body} onChange={(value) => this.setState(prev => {
-                  return {
-                    ...prev,
-                    data: {
-                      ...prev.data,
-                      about2: {
-                        ...prev.data.about2,
-                        body: value
+                <Input size="large"  defaultValue={this.state.data.about2.body} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        about2: {
+                          ...prev.data.about2,
+                          body: value
+                        }
                       }
                     }
-                  }
-                })}
-                />
+                  })
+                }} />
               </Row>
 
             </Panel>
@@ -542,20 +544,21 @@ class Contact extends React.Component {
               <Row className="padding-5">
                 <b>Body: </b>
                 <br/>
-                <CodeMirror
-                  value={this.state.data.about3.body} onChange={(value) => this.setState(prev => {
-                  return {
-                    ...prev,
-                    data: {
-                      ...prev.data,
-                      about3: {
-                        ...prev.data.about3,
-                        body: value
+                <Input size="large"  defaultValue={this.state.data.about3.body} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        about3: {
+                          ...prev.data.about3,
+                          body: value
+                        }
                       }
                     }
-                  }
-                })}
-                />
+                  })
+                }} />
               </Row>
 
             </Panel>
@@ -1369,6 +1372,353 @@ class Contact extends React.Component {
 
             </Panel>}
 
+            {this.state.data.partners !== undefined &&
+            <Panel header={'Partners'} key="partners">
+              <Row className="padding-5">
+                <b>Url [1]: </b>
+                <br/>
+                <Input size="large"  defaultValue={this.state.data.partners.url1} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        partners: {
+                          ...prev.data.partners,
+                          url1: value
+                        }
+                      }
+                    }
+                  })
+                }} />
+              </Row>
+
+
+              {this.state.data.partners !== undefined &&
+              <div style={{ marginBottom: 16 }}>
+                <label><b>Ảnh slide 1:</b></label>
+                {this.state.data.partners.img1 && <Card bordered={false} className="imgWr"
+                                                     onClick={() => this.showModalSelectImage('partner1')}
+                >
+                  <img src={this.state.data.partners.img1} />
+                </Card>}
+
+                <Button style={{marginRight: 10}}
+                        onClick={() => this.showModalSelectImage('partner1')}
+                >Chọn ảnh từ thư viện</Button>
+                {this.state.data.partners.img1 && <Button
+                  onClick={() => {
+                    this.setState(prevState => {
+                      return {
+                        ...prevState,
+                        data: {
+                          ...prevState.data,
+                          partners: {
+                            ...prevState.data.partners,
+                            img1: null
+                          }
+                        }
+                      }
+                    })
+                  }
+                  }
+                >Xóa ảnh </Button>}
+
+              </div>}
+
+              <hr style={{backgroundColor: 'blue'}}/>
+
+
+              <Row className="padding-5">
+                <b>Url [2]: </b>
+                <br/>
+                <Input size="large"  defaultValue={this.state.data.partners.url2} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        partners: {
+                          ...prev.data.partners,
+                          url2: value
+                        }
+                      }
+                    }
+                  })
+                }} />
+              </Row>
+
+
+              {this.state.data.partners !== undefined &&
+              <div style={{ marginBottom: 16 }}>
+                <label><b>Ảnh Partner [2]:</b></label>
+                {this.state.data.partners.img2 && <Card bordered={false} className="imgWr"
+                                                        onClick={() => this.showModalSelectImage('partner2')}
+                >
+                  <img src={this.state.data.partners.img2} />
+                </Card>}
+
+                <Button style={{marginRight: 10}}
+                        onClick={() => this.showModalSelectImage('partner2')}
+                >Chọn ảnh từ thư viện</Button>
+                {this.state.data.partners.img2 && <Button
+                  onClick={() => {
+                    this.setState(prevState => {
+                      return {
+                        ...prevState,
+                        data: {
+                          ...prevState.data,
+                          partners: {
+                            ...prevState.data.partners,
+                            img2: null
+                          }
+                        }
+                      }
+                    })
+                  }
+                  }
+                >Xóa ảnh </Button>}
+
+              </div>}
+
+              <hr style={{backgroundColor: 'blue'}}/>
+
+
+
+              {/*Partner 3 */}
+
+              <Row className="padding-5">
+                <b>Url [3]: </b>
+                <br/>
+                <Input size="large"  defaultValue={this.state.data.partners.url3} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        partners: {
+                          ...prev.data.partners,
+                          url3: value
+                        }
+                      }
+                    }
+                  })
+                }} />
+              </Row>
+
+
+              {this.state.data.partners !== undefined &&
+              <div style={{ marginBottom: 16 }}>
+                <label><b>Ảnh Partner 3:</b></label>
+                {this.state.data.partners.img3 && <Card bordered={false} className="imgWr"
+                                                        onClick={() => this.showModalSelectImage('partner3')}
+                >
+                  <img src={this.state.data.partners.img3} />
+                </Card>}
+
+                <Button style={{marginRight: 10}}
+                        onClick={() => this.showModalSelectImage('partner3')}
+                >Chọn ảnh từ thư viện</Button>
+                {this.state.data.partners.img3 && <Button
+                  onClick={() => {
+                    this.setState(prevState => {
+                      return {
+                        ...prevState,
+                        data: {
+                          ...prevState.data,
+                          partners: {
+                            ...prevState.data.partners,
+                            img3: null
+                          }
+                        }
+                      }
+                    })
+                  }
+                  }
+                >Xóa ảnh </Button>}
+
+              </div>}
+
+              <hr style={{backgroundColor: 'blue'}}/>
+
+              {/*Partner 4 */}
+
+              <Row className="padding-5">
+                <b>Url [4]: </b>
+                <br/>
+                <Input size="large"  defaultValue={this.state.data.partners.url4} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        partners: {
+                          ...prev.data.partners,
+                          url4: value
+                        }
+                      }
+                    }
+                  })
+                }} />
+              </Row>
+
+
+              {this.state.data.partners !== undefined &&
+              <div style={{ marginBottom: 16 }}>
+                <label><b>Ảnh Partner [4]:</b></label>
+                {this.state.data.partners.img4 && <Card bordered={false} className="imgWr"
+                                                        onClick={() => this.showModalSelectImage('partner4')}
+                >
+                  <img src={this.state.data.partners.img4} />
+                </Card>}
+
+                <Button style={{marginRight: 10}}
+                        onClick={() => this.showModalSelectImage('partner4')}
+                >Chọn ảnh từ thư viện</Button>
+                {this.state.data.partners.img4 && <Button
+                  onClick={() => {
+                    this.setState(prevState => {
+                      return {
+                        ...prevState,
+                        data: {
+                          ...prevState.data,
+                          partners: {
+                            ...prevState.data.partners,
+                            img4: null
+                          }
+                        }
+                      }
+                    })
+                  }
+                  }
+                >Xóa ảnh </Button>}
+
+              </div>}
+
+              <hr style={{backgroundColor: 'blue'}}/>
+
+              {/*Partner 5 */}
+
+              <Row className="padding-5">
+                <b>Url [5]: </b>
+                <br/>
+                <Input size="large"  defaultValue={this.state.data.partners.url5} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        partners: {
+                          ...prev.data.partners,
+                          url5: value
+                        }
+                      }
+                    }
+                  })
+                }} />
+              </Row>
+
+
+              {this.state.data.partners !== undefined &&
+              <div style={{ marginBottom: 16 }}>
+                <label><b>Ảnh Partner [5]:</b></label>
+                {this.state.data.partners.img5 && <Card bordered={false} className="imgWr"
+                                                        onClick={() => this.showModalSelectImage('partner5')}
+                >
+                  <img src={this.state.data.partners.img5} />
+                </Card>}
+
+                <Button style={{marginRight: 10}}
+                        onClick={() => this.showModalSelectImage('partner5')}
+                >Chọn ảnh từ thư viện</Button>
+                {this.state.data.partners.img5 && <Button
+                  onClick={() => {
+                    this.setState(prevState => {
+                      return {
+                        ...prevState,
+                        data: {
+                          ...prevState.data,
+                          partners: {
+                            ...prevState.data.partners,
+                            img5: null
+                          }
+                        }
+                      }
+                    })
+                  }
+                  }
+                >Xóa ảnh </Button>}
+
+              </div>}
+
+              <hr style={{backgroundColor: 'blue'}}/>
+
+
+              {/*Partner 6 */}
+
+              <Row className="padding-5">
+                <b>Url [6]: </b>
+                <br/>
+                <Input size="large"  defaultValue={this.state.data.partners.url6} onChange={(e) => {
+                  let value = e.target.value
+                  this.setState(prev => {
+                    return {
+                      ...prev,
+                      data: {
+                        ...prev.data,
+                        partners: {
+                          ...prev.data.partners,
+                          url6: value
+                        }
+                      }
+                    }
+                  })
+                }} />
+              </Row>
+
+
+              {this.state.data.partners !== undefined &&
+              <div style={{ marginBottom: 16 }}>
+                <label><b>Ảnh Partner [6]:</b></label>
+                {this.state.data.partners.img6 && <Card bordered={false} className="imgWr"
+                                                        onClick={() => this.showModalSelectImage('partner6')}
+                >
+                  <img src={this.state.data.partners.img6} />
+                </Card>}
+
+                <Button style={{marginRight: 10}}
+                        onClick={() => this.showModalSelectImage('partner6')}
+                >Chọn ảnh từ thư viện</Button>
+                {this.state.data.partners.img6 && <Button
+                  onClick={() => {
+                    this.setState(prevState => {
+                      return {
+                        ...prevState,
+                        data: {
+                          ...prevState.data,
+                          partners: {
+                            ...prevState.data.partners,
+                            img6: null
+                          }
+                        }
+                      }
+                    })
+                  }
+                  }
+                >Xóa ảnh </Button>}
+
+              </div>}
+
+              <hr style={{backgroundColor: 'blue'}}/>
+
+            </Panel>
+            }
+
           </Collapse>
           <Row className="padding-5">
             <Button
@@ -1422,7 +1772,7 @@ class Contact extends React.Component {
           modalSelectImage: false,
           data: {
             ...prevState.data,
-            slideImg1: '/image/' + img.name
+            slideImg2: '/image/' + img.name
           }
         }
       })
@@ -1464,6 +1814,90 @@ class Contact extends React.Component {
             about3: {
               ...prevState.data.about3,
               img:  '/image/' + img.name
+            }
+          }
+        }
+      })
+    } else if(this.state.selectImageType === 'partner1') {
+      this.setState(prevState => {
+        return {
+          ...prevState,
+          modalSelectImage: false,
+          data: {
+            ...prevState.data,
+            partners: {
+              ...prevState.data.partners,
+              img1:  '/image/' + img.name
+            }
+          }
+        }
+      })
+    } else if(this.state.selectImageType === 'partner2') {
+      this.setState(prevState => {
+        return {
+          ...prevState,
+          modalSelectImage: false,
+          data: {
+            ...prevState.data,
+            partners: {
+              ...prevState.data.partners,
+              img2:  '/image/' + img.name
+            }
+          }
+        }
+      })
+    } else if(this.state.selectImageType === 'partner3') {
+      this.setState(prevState => {
+        return {
+          ...prevState,
+          modalSelectImage: false,
+          data: {
+            ...prevState.data,
+            partners: {
+              ...prevState.data.partners,
+              img3:  '/image/' + img.name
+            }
+          }
+        }
+      })
+    } else if(this.state.selectImageType === 'partner4') {
+      this.setState(prevState => {
+        return {
+          ...prevState,
+          modalSelectImage: false,
+          data: {
+            ...prevState.data,
+            partners: {
+              ...prevState.data.partners,
+              img4:  '/image/' + img.name
+            }
+          }
+        }
+      })
+    } else if(this.state.selectImageType === 'partner5') {
+      this.setState(prevState => {
+        return {
+          ...prevState,
+          modalSelectImage: false,
+          data: {
+            ...prevState.data,
+            partners: {
+              ...prevState.data.partners,
+              img5:  '/image/' + img.name
+            }
+          }
+        }
+      })
+    } else if(this.state.selectImageType === 'partner6') {
+      this.setState(prevState => {
+        return {
+          ...prevState,
+          modalSelectImage: false,
+          data: {
+            ...prevState.data,
+            partners: {
+              ...prevState.data.partners,
+              img6:  '/image/' + img.name
             }
           }
         }

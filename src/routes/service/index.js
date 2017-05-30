@@ -11,7 +11,7 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import { setData } from '../../actions/data';
 
-const title = 'Service'
+const title = 'Trang dịch vụ'
 
 export default {
 

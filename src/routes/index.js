@@ -37,7 +37,7 @@ export default {
     const route = await next();
 
     // Provide default values for title, description etc.
-    route.title = `${route.title || 'Untitled Page'} - Colombus.vn`;
+    route.title = `${route.title || 'Untitled Page'} - Colombus.Vn`;
     route.description = route.description || '';
 
     return route;

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from '../../../components/Link'
 
 class BreadCrumb extends React.Component {
   render () {
@@ -6,10 +7,10 @@ class BreadCrumb extends React.Component {
       <div className="breadcrumbs">
         <div className="container">
           <span>
-            <a className="home" href="index.html" title="Go to CargoPress." rel="v:url">CargoPress</a>
+            <Link className="home" to="/" title="Go to CargoPress." rel="v:url">Trang chủ</Link>
           </span>
           <span>
-            <span>Services</span>
+            <span>{this.props.title}</span>
           </span>
         </div>
       </div>

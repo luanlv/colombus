@@ -11,8 +11,8 @@ class Service extends React.Component {
 
     return (
       <div>
-        <Title />
-        <BreadCrumb />
+        <Title title={service.title} description={''} />
+        <BreadCrumb title={service.title} />
 
         <div className="container">
           <div className="row">

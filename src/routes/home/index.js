@@ -20,11 +20,12 @@ export default {
 
     let seoGraphql = 'seo(url: "'+ path +'"){url,title,description,og_title,og_image,og_description}'
     let information = 'information{id, services, common, about, home}'
+    let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
 
     let seo = {}
     const resp = await fetch('/graphql', {
       body: JSON.stringify({
-        query: '{' + seoGraphql + ','+ information +'}',
+        query: '{' + seoGraphql + information + recentNews + '}',
       }),
     });
     const { data } = await resp.json();
@@ -33,7 +34,7 @@ export default {
     store.dispatch(setData(data))
 
     return {
-      title: 'React Starter Kit',
+      title: 'Trang chủ',
       component: <Layout data={store.getState().data}><Home data={store.getState().data} /></Layout>,
     };
   },

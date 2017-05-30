@@ -11,7 +11,7 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import { setData } from '../../actions/data';
 
-const title = 'Track'
+const title = 'Trang tracking'
 
 export default {
 

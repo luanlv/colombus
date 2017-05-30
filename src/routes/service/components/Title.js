@@ -5,8 +5,8 @@ class Title extends React.Component {
     return (
       <div className="main-title">
         <div className="container">
-          <h1 className="main-title__primary">Services</h1>
-          <h3 className="main-title__secondary">What we do and what can you expect from us</h3>
+          <h1 className="main-title__primary">{this.props.title}</h1>
+          <h3 className="main-title__secondary">{this.props.description}</h3>
         </div>
       </div>
     )
