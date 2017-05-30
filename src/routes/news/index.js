@@ -10,6 +10,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import { setData } from '../../actions/data';
+import { showLoading, hideLoading } from 'react-redux-loading-bar'
 
 const title = 'Trang tin tức'
 
@@ -18,7 +19,7 @@ export default {
   path: '/news',
 
   async action({store, fetch, path}) {
-
+    store.dispatch(showLoading())
     let seoGraphql = 'seo(url: "'+ path +'"){url,title,description,og_title,og_image,og_description}'
     let information = 'information{id, contact, services, common}'
     let allNews = 'allNews:getAllPosts{title, coverUrl, slug, public, description, view, category, created_at}'
@@ -35,7 +36,7 @@ export default {
     seo = data.seo || {}
     if (!data ) throw new Error('Failed to load data.');
     store.dispatch(setData(data))
-
+    store.dispatch(hideLoading())
     return require.ensure([], require => require('./News').default, 'news')
       .then(News => ({
         title,

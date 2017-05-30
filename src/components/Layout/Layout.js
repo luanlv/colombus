@@ -10,12 +10,14 @@
 import React from 'react';
 
 import {Header, Footer} from '../Partial'
+import LoadingBar from 'react-redux-loading-bar';
 
 class Layout extends React.Component {
 
   render() {
     return (
       <div className="boxed-container">
+        <LoadingBar showFastActions  maxProgress={80} progressIncrease={40} style={{ backgroundColor: 'red', zIndex: 1000, height: '2px' }} />
         <Header data={this.props.data}/>
 
         {this.props.children}
