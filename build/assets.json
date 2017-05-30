@@ -3,7 +3,7 @@
     "js": "/assets/admin.23321f82.chunk.js"
   },
   "contact": {
-    "js": "/assets/contact.1c45b2aa.chunk.js"
+    "js": "/assets/contact.a063328c.chunk.js"
   },
   "tracking": {
     "js": "/assets/tracking.3319cf67.chunk.js"
@@ -27,9 +27,9 @@
     "js": "/assets/about.dbe0459f.chunk.js"
   },
   "client": {
-    "js": "/assets/client.6937c5bc.js"
+    "js": "/assets/client.b940e889.js"
   },
   "vendor": {
-    "js": "/assets/vendor.983f269c.js"
+    "js": "/assets/vendor.5fd0e3bd.js"
   }
 }

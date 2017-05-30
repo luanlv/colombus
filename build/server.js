@@ -1788,7 +1788,7 @@ app.get('*', (() => {
         state: context.store.getState()
       };
 
-      let version = 5;
+      let version = 6;
 
       if (isAdmin) {
         const html = __WEBPACK_IMPORTED_MODULE_8_react_dom_server___default.a.renderToStaticMarkup(__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12__components_HtmlAdmin__["a" /* default */], _extends({ v: version }, data, { isAdmin: isAdmin })));
@@ -2327,7 +2327,7 @@ var _ref5 = _jsx('h6', {
 }, void 0, 'Li\xEAn H\u1EC7');
 
 var _ref6 = _jsx('p', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__Link__["a" /* default */], {
-  to: '/contact',
+  to: '/contact#form',
   className: 'btn btn-info'
 }, void 0, 'G\u1EEDi tin nh\u1EAFn'));
 
@@ -2502,7 +2502,7 @@ var _ref3 = _jsx('i', {
 });
 
 var _ref4 = _jsx(__WEBPACK_IMPORTED_MODULE_1__Link__["a" /* default */], {
-  to: '/contact',
+  to: '/contact#form',
   className: 'btn btn-info',
   id: 'button_requestQuote'
 }, void 0, ' Li\xEAn h\u1EC7 v\u1EDBi ch\xFAng t\xF4i ');
@@ -12957,115 +12957,116 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 
 
-var _ref = _jsx("input", {
-  type: "text",
-  name: "maximus",
-  defaultValue: true
+var _ref = _jsx('input', {
+  type: 'text',
+  name: 'maximus'
 });
 
-var _ref2 = _jsx("input", {
-  type: "hidden",
-  name: "theSubject",
-  defaultValue: "CargoPress: Contact Request"
+var _ref2 = _jsx('input', {
+  type: 'hidden',
+  name: 'theSubject',
+  defaultValue: 'CargoPress: Contact Request'
 });
 
-var _ref3 = _jsx("div", {
-  className: "row"
-}, void 0, _jsx("div", {
-  className: "col-xs-12 col-md-4"
-}, void 0, _jsx("div", {
-  className: "form-group"
-}, void 0, _jsx("input", {
-  type: "text",
-  placeholder: "First Name*",
-  "aria-invalid": "false",
-  "aria-required": "true",
+var _ref3 = _jsx('div', {
+  className: 'row'
+}, void 0, _jsx('div', {
+  className: 'col-xs-12 col-md-4'
+}, void 0, _jsx('div', {
+  className: 'form-group'
+}, void 0, _jsx('input', {
+  type: 'text',
+  placeholder: 'First Name*',
+  'aria-invalid': 'false',
+  'aria-required': 'true',
   size: 40,
-  name: "your-name",
+  name: 'your-name',
   required: true
-}))), _jsx("div", {
-  className: "col-xs-12 col-md-4"
-}, void 0, _jsx("div", {
-  className: "form-group"
-}, void 0, _jsx("input", {
-  type: "text",
-  placeholder: "Last Name*",
-  "aria-invalid": "false",
-  "aria-required": "true",
+}))), _jsx('div', {
+  className: 'col-xs-12 col-md-4'
+}, void 0, _jsx('div', {
+  className: 'form-group'
+}, void 0, _jsx('input', {
+  type: 'text',
+  placeholder: 'Last Name*',
+  'aria-invalid': 'false',
+  'aria-required': 'true',
   size: 40,
-  name: "last-name",
+  name: 'last-name',
   required: true
 }))));
 
-var _ref4 = _jsx("div", {
-  className: "row"
-}, void 0, _jsx("div", {
-  className: "col-xs-12 col-md-4"
-}, void 0, _jsx("div", {
-  className: "form-group"
-}, void 0, _jsx("input", {
-  type: "email",
-  placeholder: "E-mail address*",
-  "aria-invalid": "false",
-  "aria-required": "true",
+var _ref4 = _jsx('div', {
+  className: 'row'
+}, void 0, _jsx('div', {
+  className: 'col-xs-12 col-md-4'
+}, void 0, _jsx('div', {
+  className: 'form-group'
+}, void 0, _jsx('input', {
+  type: 'email',
+  placeholder: 'E-mail address*',
+  'aria-invalid': 'false',
+  'aria-required': 'true',
   size: 40,
-  name: "your-email",
+  name: 'your-email',
   required: true
-}))), _jsx("div", {
-  className: "col-xs-12 col-md-4"
-}, void 0, _jsx("div", {
-  className: "form-group"
-}, void 0, _jsx("input", {
-  type: "tel",
-  placeholder: "Phone Number",
-  "aria-invalid": "false",
-  "aria-required": "true",
+}))), _jsx('div', {
+  className: 'col-xs-12 col-md-4'
+}, void 0, _jsx('div', {
+  className: 'form-group'
+}, void 0, _jsx('input', {
+  type: 'tel',
+  placeholder: 'Phone Number',
+  'aria-invalid': 'false',
+  'aria-required': 'true',
   size: 40,
-  name: "your-phone"
+  name: 'your-phone'
 }))));
 
-var _ref5 = _jsx("div", {
-  className: "row"
-}, void 0, _jsx("div", {
-  className: "col-xs-12 col-md-8"
-}, void 0, _jsx("div", {
-  className: "form-group"
-}, void 0, _jsx("input", {
-  type: "text",
-  placeholder: "Subject*",
-  "aria-invalid": "false",
+var _ref5 = _jsx('div', {
+  className: 'row'
+}, void 0, _jsx('div', {
+  className: 'col-xs-12 col-md-8'
+}, void 0, _jsx('div', {
+  className: 'form-group'
+}, void 0, _jsx('input', {
+  type: 'text',
+  placeholder: 'Subject*',
+  'aria-invalid': 'false',
   size: 40,
-  name: "your-subject",
+  name: 'your-subject',
   required: true
-}))), _jsx("div", {
-  className: "col-xs-12"
-}, void 0, _jsx("div", {
-  className: "form-group"
-}, void 0, _jsx("textarea", {
-  placeholder: "Message*",
-  "aria-invalid": "false",
+}))), _jsx('div', {
+  className: 'col-xs-12'
+}, void 0, _jsx('div', {
+  className: 'form-group'
+}, void 0, _jsx('textarea', {
+  placeholder: 'Message*',
+  'aria-invalid': 'false',
   rows: 10,
   cols: 40,
-  name: "your-message",
+  name: 'your-message',
   required: true,
   defaultValue: ""
-})), _jsx("input", {
-  type: "submit",
-  className: "btn btn-primary",
-  defaultValue: "G\u1EEDi tin nh\u1EAFn"
+})), _jsx('input', {
+  type: 'submit',
+  className: 'btn btn-primary',
+  defaultValue: 'G\u1EEDi tin nh\u1EAFn'
 })));
 
 function Form(props) {
-  return _jsx("div", {}, void 0, _jsx("h3", {
-    className: "widget-title margin-top-0"
-  }, void 0, props.header), _jsx("div", {
+  return _jsx('div', {
+    id: 'form'
+  }, void 0, _jsx('h3', {
+    className: 'widget-title margin-top-0'
+  }, void 0, props.header), _jsx('div', {
     dangerouslySetInnerHTML: { __html: props.body }
-  }), _jsx("form", {
-    "data-toggle": "validator",
-    method: "post",
-    action: "form.php",
-    className: "aSubmit"
-  }, void 0, _jsx("div", {
+  }), _jsx('form', {
+    'data-toggle': 'validator',
+    method: 'post',
+    action: 'form.php',
+    className: 'aSubmit'
+  }, void 0, _jsx('div', {
     style: { display: 'none' }
   }, void 0, _ref), _ref2, _ref3, _ref4, _ref5));
 }

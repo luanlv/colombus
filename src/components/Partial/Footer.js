@@ -60,7 +60,7 @@ class Footer extends React.Component {
                 <h6 className="footer-top__headings">Liên Hệ</h6>
                 <div dangerouslySetInnerHTML={{__html: common.footer2}}/>
                 <p>
-                  <Link to="/contact" className="btn btn-info">Gửi tin nhắn</Link>
+                  <Link to="/contact#form" className="btn btn-info">Gửi tin nhắn</Link>
                 </p>
               </div>
             </div>

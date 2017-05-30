@@ -3,7 +3,7 @@ import React from 'react'
 class Form extends React.Component {
   render () {
     return (
-      <div>
+      <div id='form'>
         <h3 className="widget-title margin-top-0">
           {this.props.header}
         </h3>
@@ -11,7 +11,7 @@ class Form extends React.Component {
         <div dangerouslySetInnerHTML={{ __html: this.props.body }} />
 
         <form data-toggle="validator" method="post" action="form.php" className="aSubmit">
-          <div style={{display: 'none'}}><input type="text" name="maximus" defaultValue /></div>
+          <div style={{display: 'none'}}><input type="text" name="maximus" /></div>
           <input type="hidden" name="theSubject" defaultValue="CargoPress: Contact Request" />
           <div className="row">
             <div className="col-xs-12 col-md-4">

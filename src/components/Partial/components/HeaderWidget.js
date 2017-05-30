@@ -29,7 +29,7 @@ class HeaderWidget extends React.Component {
             <span className="icon-box__subtitle">{common.body3}</span>
           </div>
         </div>
-        <Link to="/contact" className="btn btn-info" id="button_requestQuote"> Liên hệ với chúng tôi </Link>
+        <Link to="/contact#form" className="btn btn-info" id="button_requestQuote"> Liên hệ với chúng tôi </Link>
       </div>
     )
   }
