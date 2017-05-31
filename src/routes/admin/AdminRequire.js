@@ -10,6 +10,7 @@ const Admin = {
   Common: require('./thongtinchung/Common').default,
   AllService: require('./cacdichvu/AllService').default,
   Editor: require('./editor/Editor').default,
+  Login: require('./login/Login').default,
 
   ListNews: require('./news/ListNews').default,
   EditNews: require('./news/EditNews').default,
