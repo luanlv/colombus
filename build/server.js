@@ -2117,69 +2117,35 @@ var _ref8 = _jsx('script', {
 });
 
 var _ref9 = _jsx('script', {
-  src: '/assets/js/jquery-2.1.4.min.js'
-});
-
-var _ref10 = _jsx('script', {
-  src: '/assets/js/bootstrap/carousel.js'
-});
-
-var _ref11 = _jsx('script', {
-  src: '/assets/js/bootstrap/transition.js'
-});
-
-var _ref12 = _jsx('script', {
-  src: '/assets/js/bootstrap/button.js'
-});
-
-var _ref13 = _jsx('script', {
-  src: '/assets/js/bootstrap/collapse.js'
-});
-
-var _ref14 = _jsx('script', {
-  src: '/assets/js/bootstrap/validator.js'
-});
-
-var _ref15 = _jsx('script', {
-  src: '/assets/js/underscore.js'
-});
-
-var _ref16 = _jsx('script', {
-  src: 'https://maps.google.com/maps/api/js?sensor=false'
-});
-
-var _ref17 = _jsx('script', {
-  src: '/assets/js/SimpleMap.js'
-});
-
-var _ref18 = _jsx('script', {
-  src: '/assets/js/NumberCounter.js'
-});
-
-var _ref19 = _jsx('script', {
-  src: '/assets/js/jquery.magnific-popup.min.js'
-});
-
-var _ref20 = _jsx('script', {
-  src: '/assets/js/custom.js'
+  src: 'https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js'
 });
 
 function Html(props) {
-  const { title, description, styles, scripts, app, children, v } = props;
+  const { title, description, styles, scripts, app, children, v, seo } = props;
   return _jsx('html', {
     className: 'no-js',
     lang: 'en'
   }, void 0, _jsx('head', {}, void 0, _ref, _ref2, _jsx('title', {}, void 0, title), _jsx('meta', {
     name: 'description',
     content: description
-  }), _ref3, _ref4, _ref5, _ref6, _ref7, _ref8), _jsx('body', {}, void 0, _jsx('div', {
+  }), _ref3, _ref4, _ref5, _ref6, _ref7, _ref8, _jsx('link', {
+    rel: 'stylesheet',
+    type: 'text/css',
+    href: "/css/app.css?v=" + v
+  }), _ref9, _jsx('style', {
+    dangerouslySetInnerHTML: { __html: props.css }
+  }), _jsx('script', {
+    dangerouslySetInnerHTML: { __html: props.scriptTop }
+  })), _jsx('body', {}, void 0, _jsx('div', {
     id: 'app',
     dangerouslySetInnerHTML: { __html: children }
   }), _jsx('script', {
     dangerouslySetInnerHTML: { __html: `window.App=${__WEBPACK_IMPORTED_MODULE_2_serialize_javascript___default()(app)}` }
-  }), _ref9, _ref10, _ref11, _ref12, _ref13, _ref14, _ref15, _ref16, _ref17, _ref18, _ref19, _ref20, scripts.map(script => _jsx('script', {
-    src: script + '?v=' + v
-  }, script))));
+  }), _jsx('script', {
+    dangerouslySetInnerHTML: { __html: `head.load("/assets/js/jquery-2.1.4.min.js")` + `.js("/assets/js/bootstrap/carousel.js" )` + `.js("/assets/js/bootstrap/transition.js" )` + `.js("/assets/js/bootstrap/button.js")` + `.js("/assets/js/bootstrap/collapse.js")` + `.js("/assets/js/bootstrap/validator.js")` + `.js("/assets/js/underscore.js")` + `.js("https://maps.google.com/maps/api/js?sensor=false")` + `.js("/assets/js/SimpleMap.js")` + `.js("/assets/js/NumberCounter.js")` + `.js("/assets/js/jquery.magnific-popup.min.js")` + `.js("/assets/js/custom.js")` + `.js("${scripts[0]}?v=${v}")` + `.js("${scripts[1]}?v=${v}")` }
+  }, void 0), _jsx('script', {
+    dangerouslySetInnerHTML: { __html: props.scriptBottom }
+  })));
 }
 
 Html.defaultProps = {

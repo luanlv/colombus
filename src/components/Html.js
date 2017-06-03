@@ -33,7 +33,7 @@ class Html extends React.Component {
   };
 
   render() {
-    const { title, description, styles, scripts, app, children, v } = this.props;
+    const { title, description, styles, scripts, app, children, v, seo } = this.props;
     return (
       <html className="no-js" lang="en">
         <head>
@@ -48,27 +48,38 @@ class Html extends React.Component {
           <link href="/assets/css/magnific-popup.css" rel="stylesheet" />
           <link href="//fonts.googleapis.com/css?family=Roboto%3A400%2C700%7CSource+Sans+Pro%3A700%2C900&amp;subset=latin" rel="stylesheet" />
           <script src="/assets/js/modernizr.custom.24530.js" type="text/javascript"></script>
+          <link rel="stylesheet" type="text/css"  href={"/css/app.css?v=" +v }/>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js" />
+          <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
+          <script dangerouslySetInnerHTML={{ __html: this.props.scriptTop }} />
 
         </head>
         <body>
           <div id="app" dangerouslySetInnerHTML={{ __html: children }} />
           <script dangerouslySetInnerHTML={{ __html: `window.App=${serialize(app)}` }} />
 
-          <script src="/assets/js/jquery-2.1.4.min.js"></script>
-          <script src="/assets/js/bootstrap/carousel.js"></script>
-          <script src="/assets/js/bootstrap/transition.js"></script>
-          <script src="/assets/js/bootstrap/button.js"></script>
-          <script src="/assets/js/bootstrap/collapse.js"></script>
-          <script src="/assets/js/bootstrap/validator.js"></script>
-          <script src="/assets/js/underscore.js"></script>
-          <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
-          <script src="/assets/js/SimpleMap.js"></script>
-          <script src="/assets/js/NumberCounter.js"></script>
-          <script src="/assets/js/jquery.magnific-popup.min.js"></script>
-          <script src="/assets/js/custom.js"></script>
 
-          {scripts.map(script => <script key={script} src={script + '?v=' + v} />)}
+          <script
+            dangerouslySetInnerHTML={{ __html:
+            `head.load("/assets/js/jquery-2.1.4.min.js")`
+            + `.js("/assets/js/bootstrap/carousel.js" )`
+            + `.js("/assets/js/bootstrap/transition.js" )`
+            + `.js("/assets/js/bootstrap/button.js")`
+            + `.js("/assets/js/bootstrap/collapse.js")`
+            + `.js("/assets/js/bootstrap/validator.js")`
+            + `.js("/assets/js/underscore.js")`
+            + `.js("https://maps.google.com/maps/api/js?sensor=false")`
+            + `.js("/assets/js/SimpleMap.js")`
+            + `.js("/assets/js/NumberCounter.js")`
+            + `.js("/assets/js/jquery.magnific-popup.min.js")`
+            + `.js("/assets/js/custom.js")`
+            +  `.js("${scripts[0]}?v=${v}")`
+            +  `.js("${scripts[1]}?v=${v}")`}}
+          >
+          </script>
 
+          <script dangerouslySetInnerHTML={{ __html: this.props.scriptBottom }} />
+        
 
         </body>
       </html>
