@@ -9644,7 +9644,7 @@ var _ref41 = _jsx('b', {}, void 0, 'Path 5: ');
 
 var _ref42 = _jsx('br', {});
 
-var _ref43 = _jsx('b', {}, void 0, 'Menu 3: ');
+var _ref43 = _jsx('b', {}, void 0, 'Menu 6: ');
 
 var _ref44 = _jsx('br', {});
 
@@ -10122,14 +10122,14 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: 'padding-5'
     }, void 0, _ref43, _ref44, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
       size: 'large',
-      defaultValue: this.state.data.menu.menu3,
+      defaultValue: this.state.data.menu.menu6,
       onChange: e => {
         let value = e.target.value;
         this.setState(prev => {
           return _extends({}, prev, {
             data: _extends({}, prev.data, {
               menu: _extends({}, prev.data.menu, {
-                menu3: value
+                menu6: value
               })
 
             })

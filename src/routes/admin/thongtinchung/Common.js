@@ -542,9 +542,9 @@ class Contact extends React.Component {
               <hr style={{borderColor: 'blue'}}/>
 
               <Row className="padding-5">
-                <b>Menu 3: </b>
+                <b>Menu 6: </b>
                 <br/>
-                <Input size="large" defaultValue={this.state.data.menu.menu3} onChange={(e) => {
+                <Input size="large" defaultValue={this.state.data.menu.menu6} onChange={(e) => {
                   let value = e.target.value
                   this.setState(prev => {
                     return {
@@ -553,7 +553,7 @@ class Contact extends React.Component {
                         ...prev.data,
                         menu: {
                           ...prev.data.menu,
-                          menu3: value
+                          menu6: value
                         }
 
                       }
