@@ -1795,7 +1795,7 @@ app.get('*', (() => {
         state: context.store.getState()
       };
 
-      let version = 6;
+      let version = 7;
 
       if (isAdmin) {
         const html = __WEBPACK_IMPORTED_MODULE_8_react_dom_server___default.a.renderToStaticMarkup(__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12__components_HtmlAdmin__["a" /* default */], _extends({ v: version }, data, { isAdmin: isAdmin })));
@@ -2478,7 +2478,7 @@ var _ref4 = _jsx(__WEBPACK_IMPORTED_MODULE_1__Link__["a" /* default */], {
   to: '/contact#form',
   className: 'btn btn-info',
   id: 'button_requestQuote'
-}, void 0, ' Li\xEAn h\u1EC7 v\u1EDBi ch\xFAng t\xF4i ');
+}, void 0, ' Li\xEAn h\u1EC7 ngay');
 
 function HeaderWidget(props) {
 
@@ -2493,24 +2493,27 @@ function HeaderWidget(props) {
   }, void 0, _ref, _jsx('h4', {
     className: 'icon-box__title'
   }, void 0, common.title1), _jsx('span', {
-    className: 'icon-box__subtitle'
-  }, void 0, common.body1))), _jsx('div', {
+    className: 'icon-box__subtitle',
+    dangerouslySetInnerHTML: { __html: common.body1 }
+  }))), _jsx('div', {
     className: 'widget-icon-box'
   }, void 0, _jsx('div', {
     className: 'icon-box'
   }, void 0, _ref2, _jsx('h4', {
     className: 'icon-box__title'
   }, void 0, common.title2), _jsx('span', {
-    className: 'icon-box__subtitle'
-  }, void 0, common.body2))), _jsx('div', {
+    className: 'icon-box__subtitle',
+    dangerouslySetInnerHTML: { __html: common.body2 }
+  }))), _jsx('div', {
     className: 'widget-icon-box'
   }, void 0, _jsx('div', {
     className: 'icon-box'
   }, void 0, _ref3, _jsx('h4', {
     className: 'icon-box__title'
   }, void 0, common.title3), _jsx('span', {
-    className: 'icon-box__subtitle'
-  }, void 0, common.body3))), _ref4);
+    className: 'icon-box__subtitle',
+    dangerouslySetInnerHTML: { __html: common.body3 }
+  }))), _ref4);
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (HeaderWidget);

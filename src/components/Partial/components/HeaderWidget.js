@@ -12,24 +12,30 @@ class HeaderWidget extends React.Component {
           <div className="icon-box">
             <i className="fa fa-headphones" />
             <h4 className="icon-box__title">{common.title1}</h4>
-            <span className="icon-box__subtitle">{common.body1}</span>
+            <span className="icon-box__subtitle"
+              dangerouslySetInnerHTML={{__html: common.body1}}
+            />
           </div>
         </div>
         <div className="widget-icon-box">
           <div className="icon-box">
             <i className="fa fa-clock-o" />
             <h4 className="icon-box__title">{common.title2}</h4>
-            <span className="icon-box__subtitle">{common.body2}</span>
+            <span className="icon-box__subtitle"
+                  dangerouslySetInnerHTML={{__html: common.body2}}
+            />
           </div>
         </div>
         <div className="widget-icon-box">
           <div className="icon-box">
             <i className="fa fa-envelope-o" />
             <h4 className="icon-box__title">{common.title3}</h4>
-            <span className="icon-box__subtitle">{common.body3}</span>
+            <span className="icon-box__subtitle"
+                  dangerouslySetInnerHTML={{__html: common.body3}}
+            />
           </div>
         </div>
-        <Link to="/contact#form" className="btn btn-info" id="button_requestQuote"> Liên hệ với chúng tôi </Link>
+        <Link to="/contact#form" className="btn btn-info" id="button_requestQuote"> Liên hệ ngay</Link>
       </div>
     )
   }
