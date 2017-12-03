@@ -2305,17 +2305,8 @@ var _ref6 = _jsx('p', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__Link__["a" /
 }, void 0, 'G\u1EEDi tin nh\u1EAFn'));
 
 var _ref7 = _jsx('div', {
-  className: 'footer-bottom'
-}, void 0, _jsx('div', {
-  className: 'container'
-}, void 0, _jsx('div', {
-  className: 'footer-bottom__left'
-}, void 0, 'Made by ', _jsx('a', {
-  target: '_blank',
-  href: 'http://vnguy.com'
-}, void 0, 'VnGuy.Com')), _jsx('div', {
   className: 'footer-bottom__right'
-}, void 0, 'Copyright \xA9 2017 Colombus.Vn. All rights reserved.')));
+}, void 0, 'Copyright \xA9 2017 Colombus.Vn. All rights reserved.');
 
 function Footer(props) {
 
@@ -2366,7 +2357,13 @@ function Footer(props) {
     className: 'col-xs-12 col-md-6'
   }, void 0, _ref5, _jsx('div', {
     dangerouslySetInnerHTML: { __html: common.footer2 }
-  }), _ref6)))), _ref7);
+  }), _ref6)))), _jsx('div', {
+    className: 'footer-bottom'
+  }, void 0, _jsx('div', {
+    className: 'container'
+  }, void 0, _jsx('div', {
+    className: 'footer-bottom__left'
+  }, void 0), _ref7)));
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (Footer);

@@ -69,7 +69,7 @@ class Footer extends React.Component {
         <div className="footer-bottom">
           <div className="container">
             <div className="footer-bottom__left">
-              Made by <a target="_blank" href="http://vnguy.com">VnGuy.Com</a>
+              {/*Made by <a target="_blank" href="http://vnguy.com">VnGuy.Com</a>*/}
             </div>
             <div className="footer-bottom__right">
               Copyright © 2017 Colombus.Vn. All rights reserved.
