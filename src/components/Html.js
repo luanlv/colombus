@@ -68,8 +68,8 @@ class Html extends React.Component {
             + `.js("/assets/js/bootstrap/collapse.js")`
             + `.js("/assets/js/bootstrap/validator.js")`
             + `.js("/assets/js/underscore.js")`
-            + `.js("https://maps.google.com/maps/api/js?sensor=false")`
-            + `.js("/assets/js/SimpleMap.js")`
+            // + `.js("https://maps.google.com/maps/api/js?sensor=false")`
+            // + `.js("/assets/js/SimpleMap.js")`
             + `.js("/assets/js/NumberCounter.js")`
             + `.js("/assets/js/jquery.magnific-popup.min.js")`
             + `.js("/assets/js/custom.js")`
@@ -79,7 +79,7 @@ class Html extends React.Component {
           </script>
 
           <script dangerouslySetInnerHTML={{ __html: this.props.scriptBottom }} />
-        
+
 
         </body>
       </html>

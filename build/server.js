@@ -2142,7 +2142,10 @@ function Html(props) {
   }), _jsx('script', {
     dangerouslySetInnerHTML: { __html: `window.App=${__WEBPACK_IMPORTED_MODULE_2_serialize_javascript___default()(app)}` }
   }), _jsx('script', {
-    dangerouslySetInnerHTML: { __html: `head.load("/assets/js/jquery-2.1.4.min.js")` + `.js("/assets/js/bootstrap/carousel.js" )` + `.js("/assets/js/bootstrap/transition.js" )` + `.js("/assets/js/bootstrap/button.js")` + `.js("/assets/js/bootstrap/collapse.js")` + `.js("/assets/js/bootstrap/validator.js")` + `.js("/assets/js/underscore.js")` + `.js("https://maps.google.com/maps/api/js?sensor=false")` + `.js("/assets/js/SimpleMap.js")` + `.js("/assets/js/NumberCounter.js")` + `.js("/assets/js/jquery.magnific-popup.min.js")` + `.js("/assets/js/custom.js")` + `.js("${scripts[0]}?v=${v}")` + `.js("${scripts[1]}?v=${v}")` }
+    dangerouslySetInnerHTML: { __html: `head.load("/assets/js/jquery-2.1.4.min.js")` + `.js("/assets/js/bootstrap/carousel.js" )` + `.js("/assets/js/bootstrap/transition.js" )` + `.js("/assets/js/bootstrap/button.js")` + `.js("/assets/js/bootstrap/collapse.js")` + `.js("/assets/js/bootstrap/validator.js")` + `.js("/assets/js/underscore.js")`
+      // + `.js("https://maps.google.com/maps/api/js?sensor=false")`
+      // + `.js("/assets/js/SimpleMap.js")`
+      + `.js("/assets/js/NumberCounter.js")` + `.js("/assets/js/jquery.magnific-popup.min.js")` + `.js("/assets/js/custom.js")` + `.js("${scripts[0]}?v=${v}")` + `.js("${scripts[1]}?v=${v}")` }
   }, void 0), _jsx('script', {
     dangerouslySetInnerHTML: { __html: props.scriptBottom }
   })));
